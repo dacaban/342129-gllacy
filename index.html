@@ -27,10 +27,17 @@
 					<li><a title="Информация о доставке и оплате" href="#">Доставка и оплата</a></li>
 					<li><a title="Информация о компании" href="#">О компании</a></li>
 				</ul>
+				<p>
 				<button type="button" class="search">Поиск</button>
+				</p>
 
 				<div class="modal modal-search">
-					<!--Форма поиска-->
+					<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+						<label class="visually-hidden">
+							Поиск
+							<input type="search" name="search" value="" placeholder="Что ищем?">
+						</label>
+					</form>
 				</div>
 
 				<a class="login-link" href="login.html" title="Войти в личный кабинет">Вход</a>
