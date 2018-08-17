@@ -17,7 +17,7 @@
 				<li><a title="Информация о доставке и оплате" href="#">Доставка и оплата</a></li>
 				<li><a title="Информация о компании" href="#">О компании</a></li>
 			</ul>
-			
+
 			<p>
 				<button type="button" class="search">Поиск</button>
 			</p>
@@ -116,7 +116,90 @@
 
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
-				<!--Здесь будет форма-->
+				<form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
+					<div class="sort">
+						<label>
+							Сортировка:
+							<select name="sort">
+								<option value="popularity">по популярности</option>
+								<option value="cheap-first">сначала недорогие</option>
+								<option value="expensive-first">сначала дорогие</option>
+								<option value="fat-content">по жирности</option>
+							</select>
+						</label>
+					</div>
+					<div class="price">
+						<label>
+							Цена: 100 руб. – 500 руб.
+							<input type="range" name="price" multiple>
+						</label>
+					</div>
+						<fieldset class="fat">
+							<legend>Жирность:</legend>
+							<ul>
+								<li>
+									<label>
+									<input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" value="0">
+									0%
+									</label>
+								</li>
+								<li>
+									<label>
+									<input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" value="1-10" checked>
+									до 10%
+									</label>
+								</li>
+								<li>
+									<label>
+									<input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" value="11-30">
+									до 30%
+									</label>
+								</li>
+								<li>
+									<label>
+									<input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" value="more-30">
+									выше 30%
+									</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="additive">
+							<legend>Наполнители:</legend>
+							<ul>
+								<li>
+									<label>
+									<input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="chocolate" checked>
+									шоколадные
+									</label>
+								</li>
+								<li>
+									<label>
+									<input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="sugar" checked>
+									сахарные присыпки
+									</label>
+								</li>
+								<li>
+									<label>
+									<input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="fruits">
+									фрукты
+									</label>
+								</li>
+								<li>
+									<label>
+									<input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="syrups">
+									сиропы
+									</label>
+								</li>
+								<li>
+									<label>
+									<input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="jams">
+									джемы
+									</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button type="submit" class="btn">Применить</button>
+				</form>
 			</section>
 
 			<section class="products">
