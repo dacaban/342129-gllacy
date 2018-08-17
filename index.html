@@ -44,9 +44,26 @@
 
 				<section class="modal modal-login">
 					<h2>Войти</h2>
-					<!--Форма входа-->
-					<a title="Восстановить пароль" href="#">Забыли пароль?</a>
-					<a title="Зарегистрироваться" href="#">Новая регистрация</a>
+					<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+		      	<p>
+			      	<label class="visually-hidden">
+			      		Электронная почта
+			      		<input type="text" name="email" placeholder="Электронная почта">
+			      	</label>
+		      	</p>
+		      	<p>
+			      	<label class="visually-hidden">
+			      		Пароль
+			      		<input type="password" name="password" placeholder="Пароль">
+			      	</label>
+				    </p>
+				    <p>
+							<a title="Восстановить пароль" href="#">Забыли пароль?</a>
+						</p>
+						<p>
+							<a title="Зарегистрироваться" href="#">Новая регистрация</a>
+						</p>
+						<button class="btn" type="submit">Войти</button>
 				</section>
 
 				<button type="button" aria-label="Корзина" class="cart empty">Пусто</button>
