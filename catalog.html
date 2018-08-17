@@ -17,9 +17,49 @@
 				<li><a title="Информация о доставке и оплате" href="#">Доставка и оплата</a></li>
 				<li><a title="Информация о компании" href="#">О компании</a></li>
 			</ul>
-			<span class="search">Поиск</span>
-			<span class="enter">Вход</span>
-			<span class="cart full">2 товара</span>
+			
+			<p>
+				<button type="button" class="search">Поиск</button>
+			</p>
+
+			<div class="modal modal-search">
+				<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+					<label class="visually-hidden">
+						Поиск
+						<input type="search" name="search" value="" placeholder="Что ищем?">
+					</label>
+				</form>
+			</div>
+
+			<a class="login-link" href="login.html" title="Войти в личный кабинет">Вход</a>
+
+			<section class="modal modal-login">
+				<h2>Войти</h2>
+				<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+		      <p>
+			      <label class="visually-hidden">
+			      	Электронная почта
+			      	<input type="text" name="email" placeholder="Электронная почта">
+			      </label>
+		      </p>
+		      <p>
+			      <label class="visually-hidden">
+			      	Пароль
+			      	<input type="password" name="password" placeholder="Пароль">
+			      </label>
+				   </p>
+				   <p>
+						<a title="Восстановить пароль" href="#">Забыли пароль?</a>
+					</p>
+					<p>
+						<a title="Зарегистрироваться" href="#">Новая регистрация</a>
+					</p>
+					<button class="btn" type="submit">Войти</button>
+				</form>
+			</section>
+
+				<a href="#" title="Корзина" class="cart full">2 товара</a>
+
 			<section class="modal modal-fullcart">
 				<table border="1">
 					<tr class="visually-hidden">
@@ -54,7 +94,7 @@
 						<td>750 руб.</td>
 					</tr>
 				</table>
-				<a title="Оформить" class="button" href="#">Оформить заказ</a>
+				<a title="Оформить" class="btn" href="#">Оформить заказ</a>
 			</section>
 				<p>
 					С 10 до 20, ежедневно<br>
