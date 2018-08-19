@@ -11,14 +11,14 @@
 		<header class="main-header">
 
 			<h1 class="visually-hidden">Магазин Глейси</h1>
-			<a title="На главную"><img class="logo" src="img/logo.svg" width="154" height="64" alt="«Gllacy Shop»"></a>
+			<a href="index.html" title="На главную"><img class="logo" src="img/logo.svg" width="154" height="64" alt="«Gllacy Shop»"></a>
 			<nav class="maim-navigation">
 				<ul class="main-menu">
 					<li>
 						<a title="Перейти в каталог" href="catalog.html">Каталог</a>
 						<ul class="visually-hidden">
 							<li><a title="Новинки" href="#">Новинки</a></li>
-							<li><a title="Сливочное мороженое" href="#">Сливочное</a></li>
+							<li><a title="Сливочное мороженое" href="catalog.html">Сливочное</a></li>
 							<li><a title="Щербеты" href="#">Щербеты</a></li>
 							<li><a title="Фруктовый лед" href="#">Фруктовый лед</a></li>
 							<li><a title="Мелорин" href="#">Мелорин</a></li>
@@ -27,22 +27,47 @@
 					<li><a title="Информация о доставке и оплате" href="#">Доставка и оплата</a></li>
 					<li><a title="Информация о компании" href="#">О компании</a></li>
 				</ul>
-				<span class="search">Поиск</span>
+				<p>
+				<button type="button" class="search">Поиск</button>
+				</p>
 
 				<div class="modal modal-search">
-					<!--Форма поиска-->
+					<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+						<label class="visually-hidden">
+							Поиск
+							<input type="search" name="search" value="" placeholder="Что ищем?">
+						</label>
+					</form>
 				</div>
 
-				<span class="enter">Вход</span>
+				<a class="login-link" href="login.html" title="Войти в личный кабинет">Вход</a>
 
 				<section class="modal modal-login">
 					<h2>Войти</h2>
-					<!--Форма входа-->
-					<a title="Восстановить пароль" href="#">Забыли пароль?</a>
-					<a title="Зарегистрироваться" href="#">Новая регистрация</a>
+					<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+		      	<p>
+			      	<label class="visually-hidden">
+			      		Электронная почта
+			      		<input type="text" name="email" placeholder="Электронная почта">
+			      	</label>
+		      	</p>
+		      	<p>
+			      	<label class="visually-hidden">
+			      		Пароль
+			      		<input type="password" name="password" placeholder="Пароль">
+			      	</label>
+				    </p>
+				    <p>
+							<a title="Восстановить пароль" href="#">Забыли пароль?</a>
+						</p>
+						<p>
+							<a title="Зарегистрироваться" href="#">Новая регистрация</a>
+						</p>
+						<button class="btn" type="submit">Войти</button>
+					</form>
 				</section>
 
-				<span class="cart empty">Пусто</span>
+				<a href="#" title="Корзина" class="cart empty">Пусто</a>
 					<p>
 						С 10 до 20, ежедневно<br>
 						8 812 450-25-25
@@ -57,18 +82,30 @@
 				<h2 class="visually-hidden">Специальные предложения</h2>
 				<div class="slide-1">
 					<h3>Крем-брюле и пломбир с малиновым джемом</h3>
-					<p class="image"><img src="img/slide-1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом"></p>
-					<p class="price"><a class="btn" href="#" title="Перейти">Давайте оба!</a></p>
+					<div class="image"><img src="img/slide-1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом"></div>
+					<p><a class="btn" href="#" title="Перейти">Давайте оба!</a></p>
+					<label class="visually-hidden">
+						Слайд 1
+						<input class="switch" type="radio" name="slider" value="slide-1" checked>
+					</label>
 				</div>
 				<div class="slide-2">
 					<h3>Шоколадный пломбир и лимонный сорбет</h3>
-					<p class="image"><img src="img/slide-2.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет"></p>
-					<p class="price"><a class="btn" href="#" title="Перейти">Давайте оба!</a></p>
+					<div class="image"><img src="img/slide-2.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет"></div>
+					<p><a class="btn" href="#" title="Перейти">Давайте оба!</a></p>
+					<label class="visually-hidden">
+						Слайд 2
+						<input class="switch" type="radio" name="slider" value="slide-2">
+					</label>
 				</div>
 				<div class="slide-3">
 					<h3>Пломбир с помадкой и клубничный щербет</h3>
-					<p class="image"><img src="img/slide-3.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет"></p>
-					<p class="price"><a class="btn" href="#" title="Перейти">Давайте оба!</a></p>
+					<div class="image"><img src="img/slide-3.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет"></div>
+					<p><a class="btn" href="#" title="Перейти">Давайте оба!</a></p>
+					<label class="visually-hidden">
+						Слайд 3
+						<input class="switch" type="radio" name="slider" value="slide-3">
+					</label>
 				</div>
 			</section>
 
@@ -92,45 +129,53 @@
 				<h2 class="visually-hidden">Наши предложения</h2>
 				<ul class="products-list">
 					<li class="product-item">
-						<h3 class="name">
-							<a title="Просмотр" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-						</h3>
-						<p class="image">
-							<a title="Полное изображение" href="#"><img src="img/icecream-1.jpg" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой"></a>
-						</p>
+						<a title="Просмотр" href="#">
+							<h3 class="name">
+								Сливочное с апельсиновым джемом и цитрусовой стружкой
+							</h3>
+							<p class="image">
+								<img src="img/icecream-1.jpg" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
+							</p>
+						</a>
 						<p class="price">
 							<b>310 ₽</b><span class="weight">/кг</span>
 						</p>
 					</li>
 					<li class="product-item">
-						<h3 class="name">
-							<a title="Просмотр" href="#">Сливочно-кофейное с кусочками шоколада</a>
-						</h3>
-						<p class="image">
-							<a title="Полное изображение" href="#"><img src="img/icecream-2.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое с кусочками шоколада"></a>
-						</p>
+						<a title="Просмотр" href="#">
+							<h3 class="name">
+								Сливочно-кофейное с кусочками шоколада
+							</h3>
+							<p class="image">
+								<img src="img/icecream-2.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое с кусочками шоколада">
+							</p>
+						</a>
 						<p class="price">
 							<b>380 ₽</b><span class="weight">/кг</span>
 						</p>
 					</li>
 					<li class="product-item">
-						<h3 class="name">
-							<a title="Просмотр" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-						</h3>
-						<p class="image">
-							<a title="Полное изображение" href="#"><img src="img/icecream-3.jpg" width="267" height="267" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада"></a>
-						</p>
+						<a title="Просмотр" href="#">
+							<h3 class="name">
+								Сливочно-клубничное с присыпкой из белого шоколада
+							</h3>
+							<p class="image">
+								<img src="img/icecream-3.jpg" width="267" height="267" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
+							</p>
+						</a>
 						<p class="price">
 							<b>355 ₽</b><span class="weight">/кг</span>
 						</p>
 					</li>
 					<li class="product-item">
-						<h3 class="name">
-							<a title="Просмотр" href="#">Сливочное крем-брюле с карамельной подливкой</a>
-						</h3>
-						<p class="image">
-							<a title="Полное изображение" href="#"><img src="img/icecream-4.jpg" width="267" height="267" alt="Сливочное мороженое крем-брюле с карамельной подливкой"></a>
-						</p>
+						<a title="Просмотр" href="#">
+							<h3 class="name">
+								Сливочное крем-брюле с карамельной подливкой
+							</h3>
+							<p class="image">
+								<img src="img/icecream-4.jpg" width="267" height="267" alt="Сливочное мороженое крем-брюле с карамельной подливкой">
+							</p>
+						</a>
 						<p class="price">
 							<b>415 ₽</b><span class="weight">/кг</span>
 						</p>
@@ -167,22 +212,48 @@
 			<section class="subscribe">
 				<h2 class="visually-hidden">Подписаться</h2>
 				<p class="subscribe-tip">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-				<!--Форма для подписки на новости-->
+				<form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+						<label class="visually-hidden">
+							Электронная почта
+							<input type="text" name="email" value="" placeholder="Электронная почта">
+						</label>
+						<button class="btn" type="submit" aria-label="Подписаться на рассылку">Отправить</button>
+				</form>
 			</section>
 
 
 			<div class="modal modal-feadback">
 				<h2>Мы обязательно вам ответим!</h2>
-				<!--Форма обратной связи-->
+				<form class="feadback-form" action="https://echo.htmlacademy.ru" method="post">
+					<p>
+	          <label class="visually-hidden">
+	          	Имя
+	          	<input type="text" name="fullname" placeholder="Как вас зовут?">
+	          </label>
+        	</p>
+          <p>
+	          <label class="visually-hidden">
+	          	Электронная почта
+	          	<input type="text" name="email" placeholder="Ваша почта для ответа?">
+	          </label>
+	        </p>
+	        <p>
+	          <label class="visually-hidden">
+	          	Текст обращения
+	          	<textarea name="message" placeholder="Напишите что-нибудь..."></textarea>
+	          </label>
+	        </p>
+	        <button type="submit" class="btn">Отправить</button>
+				</form>
 			</div>
 
 			<section class="contacts">
 				<h2 class="visually-hidden">Контактная инфоормация</h2>
 				<h3>Адрес главного офиса и офлайн-магазина:</h3>
-				<p>
+				<address>
 					ул. Большая Конюшенная 19/8,<br>
 					Санкт-Петербург
-				</p>
+				</address>
 				<h3>Для заказов по телефону:</h3>
 				<p>8 812 450-25-25<br>
 					(с 10 до 20 ежедневно)
@@ -191,7 +262,9 @@
 
 			<section class="map">
 				<h2 class="visually-hidden">Как до нас добраться</h2>
-				<!--Карта-->
+				<p>
+      			<img src="img/map.jpg" width="1250" height="430" alt="Мы находимся по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+  			</p>
 			</section>
 
 		</main>
