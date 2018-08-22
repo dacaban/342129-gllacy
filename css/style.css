@@ -118,6 +118,7 @@ a {
   background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   opacity: 0.99;
   box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
+  border: none;
 }
 
 .slides h3 {
@@ -249,3 +250,32 @@ a {
   text-decoration: underline;
 }
 
+.subscribe {
+  background-color: #f8f7f4;
+  background-image: url("../img/post.svg"); /*Не отображается svg*/
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.subscribe .content {
+  background-color: #f8f7f4;
+}
+
+.subscribe .tip {
+  color: #5a5a5a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.subscribe input {
+  color: #323232; /*как изменить формат текста placeholder?*/
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+
+  border: solid 1px #b2b2b2;
+}
+
+
+/*А еще не могу экспортировать знак рубля в svg*/
