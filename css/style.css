@@ -147,3 +147,29 @@ a {
 .slides .switches {
   list-style: none;
 }
+
+.special-offer .list {
+  list-style: none;
+}
+
+.special-offer h3 {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.special-offer p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.special-offer li:first-of-type {
+  background-image: url("../img/raspberry.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.special-offer li:last-of-type {
+  background-image: url("../img/chocolate.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
