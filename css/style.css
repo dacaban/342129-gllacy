@@ -173,3 +173,31 @@ a {
   background-position: 0 0;
   background-repeat: no-repeat;
 }
+
+.products .list {
+  list-style: none;
+}
+
+.products .name {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.price {
+  line-height: 45px;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.price b {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.price .weight {
+  font-size: 30px;
+  line-height: 45px;
+}
