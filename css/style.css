@@ -227,3 +227,25 @@ a {
   line-height: 22px;
 }
 
+.blog-new {
+  color: #323232;
+
+  background-color: #ffffff;
+  background-image: url("../img/preview.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.blog-new h2 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.blog-new a {
+  color: #323232;
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: underline;
+}
+
