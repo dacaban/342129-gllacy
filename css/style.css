@@ -22,7 +22,7 @@ a {
 
 .submenu {
   background-color: #f8f7f4;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 
@@ -71,4 +71,24 @@ a {
 
 .submenu a:not(.new) {
   font-weight: 500;
+}
+
+.search,
+.login-link,
+.cart {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 16px;
+  color: #ffffff;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+}
+
+.search:hover,
+.login-link:hover,
+.cart:hover {
+  color: #323232;
+
+  background-color: #f8f7f4;
 }
