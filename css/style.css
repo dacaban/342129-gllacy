@@ -106,3 +106,44 @@ a {
   text-align: right;
 }
 
+.btn {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  text-align: center;
+
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  opacity: 0.99;
+  box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
+}
+
+.slides h3 {
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.slides .btn {
+  font-size: 32px;
+  line-height: 44px;
+
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+}
+
+.slide-1 {
+  background-color: #849d8f;
+}
+
+.slide-2 {
+  background-color: #8996a6;
+}
+
+.slide-3 {
+  background-color: #9d8b84;
+}
+
+.slides .switches {
+  list-style: none;
+}
