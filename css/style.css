@@ -92,3 +92,13 @@ a {
 
   background-color: #f8f7f4;
 }
+
+.maim-navigation .operating-mode {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.maim-navigation .phone {
+  font-size: 22px;
+  line-height: 24px;
+}
