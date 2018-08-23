@@ -303,6 +303,8 @@ a {
   border: solid 1px #b2b2b2;
 }
 
+
+
 .contacts {
   color: #323232;
 
@@ -392,7 +394,17 @@ a {
   border: solid 1px #b2b2b2;
 }
 
-.login a {
+.modal input:hover {
+  border: 2px solid #9a9a9a; /*цвет не похож на тот, что в макете, хотя в настройках цветов фотошопа все в порядке*/
+}
+/*если взять цвет пипеткой, он получается другой, чем если копировать стили в css из фотошопа*/
+
+.modal input:focus {
+  border: 2px solid #2e88e4;
+}
+
+
+.modal-login a {
   color:#323232;
   font-size: 13px;
   font-weight: 400;
@@ -400,14 +412,20 @@ a {
   text-decoration: underline;
 }
 
-.modal:not(.feedback) {
+.modal:not(.modal-feedback) {
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
-.feedback h2{
+.modal-feedback h2{
   color: #323232;
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
+}
+
+input [type="text"]:hover,
+input [type="password"]:hover,
+input [type="search"]:hover {
+  border: 2px solid #9a9a9a;
 }
 /*А еще не могу экспортировать знак рубля в svg*/
