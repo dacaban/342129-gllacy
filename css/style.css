@@ -306,4 +306,11 @@ a {
   line-height: 22px;
 }
 
+.social ul {
+  list-style: none;
+}
+
+.social a {
+  color: #ffffff;
+}
 /*А еще не могу экспортировать знак рубля в svg*/
