@@ -277,5 +277,33 @@ a {
   border: solid 1px #b2b2b2;
 }
 
+.contacts {
+  color: #323232;
+
+  background-color: #fffefe;
+}
+
+.contacts h3 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.contacts address {
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.contacts .phone {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.contacts .operating-mode {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
 
 /*А еще не могу экспортировать знак рубля в svg*/
