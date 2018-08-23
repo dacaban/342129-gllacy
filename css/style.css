@@ -313,4 +313,22 @@ a {
 .social a {
   color: #ffffff;
 }
+
+.documents h2 {
+  font-size: 13px;
+  line-height: 18px;
+  text-decoration: underline;
+}
+
+.documents .list {
+  list-style: none;
+}
+
+.documents a {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: underline;
+}
 /*А еще не могу экспортировать знак рубля в svg*/
