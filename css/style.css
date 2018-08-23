@@ -331,4 +331,15 @@ a {
   line-height: 18px;
   text-decoration: underline;
 }
+
+.copyright {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.copyright a {
+  color: #ffffff;
+  text-decoration: underline; /*И опять не отображается svg логотип академии*/
+}
 /*А еще не могу экспортировать знак рубля в svg*/
