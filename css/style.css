@@ -207,6 +207,7 @@ a {
 .products .name:hover,
 .products .name:focus {
   color: #ffbc9e;
+  text-decoration: none;
 }
 
 .price {
@@ -274,6 +275,7 @@ a {
 .blog-new a:hover,
 .blog-new a:focus{
   color: #e84d37;
+  text-decoration: none;
 }
 
 .subscribe {
@@ -332,6 +334,36 @@ a {
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
+}
+
+.container h1 {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: underline;
+
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  color: #ffbc9e;
+  text-decoration: none;
+}
+
+.breadcrumbs .active {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
 }
 
 .filters fieldset {
@@ -409,6 +441,7 @@ a {
 .documents a:hover,
 .documents a:focus {
   color: #ffbc9e;
+  text-decoration: none;
 }
 
 .copyright {
@@ -424,7 +457,8 @@ a {
 
 .copyright a:hover,
 .copyright a:focus {
-    color: #ffbc9e;
+  color: #ffbc9e;
+  text-decoration: none;
 }
 
 .modal {
@@ -463,6 +497,7 @@ a {
 .modal-login a:hover,
 .modal-login a:focus {
   color: #e84d37;
+  text-decoration: none;
 }
 
 .modal:not(.modal-feedback) {
@@ -489,36 +524,6 @@ a {
   font-size: 15px;
   font-weight: 700;
   line-height: 18px;
-}
-
-.container h1 {
-  font-size: 35px;
-  line-height: 41px;
-}
-
-.breadcrumbs {
-  list-style: none;
-}
-
-.breadcrumbs a {
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
-  text-decoration: underline;
-
-}
-
-.breadcrumbs a:hover,
-.breadcrumbs a:focus {
-  color: #ffbc9e;
-  text-decoration: none;
-}
-
-.breadcrumbs .active {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
 }
 
 /*А еще не могу экспортировать знак рубля в svg*/
