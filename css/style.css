@@ -444,4 +444,10 @@ a {
   font-weight: 700;
   line-height: 18px;
 }
+
+.container h1 {
+  font-size: 35px;
+  line-height: 41px;
+}
+
 /*А еще не могу экспортировать знак рубля в svg*/
