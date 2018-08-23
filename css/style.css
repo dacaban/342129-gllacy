@@ -188,6 +188,11 @@ a {
   text-decoration: underline;
 }
 
+.products .name:hover,
+.products .name:focus {
+  color: #ffbc9e;
+}
+
 .price {
   line-height: 45px;
   text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
@@ -248,6 +253,11 @@ a {
   font-size: 24px;
   line-height: 30px;
   text-decoration: underline;
+}
+
+.blog-new a:hover,
+.blog-new a:focus{
+  color: #e84d37;
 }
 
 .subscribe {
@@ -332,6 +342,11 @@ a {
   text-decoration: underline;
 }
 
+.documents a:hover,
+.documents a:focus {
+  color: #ffbc9e;
+}
+
 .copyright {
   font-size: 12px;
   font-weight: 400;
@@ -341,5 +356,42 @@ a {
 .copyright a {
   color: #ffffff;
   text-decoration: underline; /*И опять не отображается svg логотип академии*/
+}
+
+.copyright a:hover,
+.copyright a:focus {
+    color: #ffbc9e;
+}
+
+.modal {
+  background-color: #f8f7f4;
+}
+
+.modal input {
+  color: #323232; /*как изменить формат текста placeholder?*/
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+
+  border: solid 1px #b2b2b2;
+}
+
+.login a {
+  color:#323232;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: underline;
+}
+
+.modal:not(.feedback) {
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.feedback h2{
+  color: #323232;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
 }
 /*А еще не могу экспортировать знак рубля в svg*/
