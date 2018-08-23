@@ -412,6 +412,11 @@ a {
   text-decoration: underline;
 }
 
+.modal-login a:hover,
+.modal-login a:focus {
+  color: #e84d37;
+}
+
 .modal:not(.modal-feedback) {
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
@@ -421,11 +426,5 @@ a {
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
-}
-
-input [type="text"]:hover,
-input [type="password"]:hover,
-input [type="search"]:hover {
-  border: 2px solid #9a9a9a;
 }
 /*А еще не могу экспортировать знак рубля в svg*/
