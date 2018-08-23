@@ -334,6 +334,52 @@ a {
   line-height: 22px;
 }
 
+.filters fieldset {
+  border: none;
+}
+
+.sort label,
+.filter-price label,
+.filters legend {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.sort select {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sort select:hover {
+  color: #323232;
+}
+
+.sort option {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.filter-bg {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.filters ul {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 .social ul {
   list-style: none;
 }
@@ -474,4 +520,5 @@ a {
   font-weight: 400;
   line-height: 16px;
 }
+
 /*А еще не могу экспортировать знак рубля в svg*/
