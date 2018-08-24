@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Каталог мороженого в онлайн-магазине лейси">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <title>Каталог</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -77,7 +80,7 @@
 						<td>Пломбир с апельсиновым джемом</td>
 						<td>1,5 кг</td>
 						<td>&#215;</td>
-						<td>200 руб.</td>
+						<td class="cart-price">200 руб.</td>
 						<td>300 руб.</td>
 					</tr>
 					<tr>
@@ -86,19 +89,20 @@
 						<td>Клубничный пломбир с присыпкой из белого шоколада</td>
 						<td>1,5 кг</td>
 						<td>&#215;</td>
-						<td>300 руб.</td>
+						<td class="cart-price">300 руб.</td>
 						<td>450 руб.</td>
 					</tr>
 					<tr>
-						<td colspan="6">Итого:</td>
-						<td>750 руб.</td>
+						<td colspan="6" class="total">Итого:</td>
+						<td class="total">750 руб.</td>
 					</tr>
 				</table>
 				<a title="Оформить" class="btn" href="#">Оформить заказ</a>
 			</section>
 				<p>
-					С 10 до 20, ежедневно<br>
-					8 812 450-25-25
+          <span class="operating-mode">С 10 до 20, ежедневно</span>
+          <br>
+          <span class="phone">8 812 450-25-25</span>
 				</p>
 		</nav>
 
@@ -111,7 +115,7 @@
 			<ul class="breadcrumbs">
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="catalog.html">Каталог</a></li>
-				<li class="active">Сливочное</li>
+				<li class="breadcrumbs-active">Сливочное</li>
 			</ul>
 
 			<section class="filters">
@@ -120,18 +124,24 @@
 					<div class="sort">
 						<label>
 							Сортировка:
-							<select name="sort">
-								<option value="popularity">по популярности</option>
-								<option value="cheap-first">сначала недорогие</option>
-								<option value="expensive-first">сначала дорогие</option>
-								<option value="fat-content">по жирности</option>
-							</select>
+
+              <select>
+                <option value="popularity">по популярности</option>
+                <option value="cheap-first">сначала недорогие</option>
+                <option value="expensive-first">сначала дорогие</option>
+                <option value="fat-content">по жирности</option>
+              </select>
+
 						</label>
 					</div>
-					<div class="price">
+					<div class="filter-price">
 						<label>
-							Цена: 100 руб. – 500 руб.
-							<input type="range" name="price">
+              Цена: <span>100</span> руб. – <span>500</span> руб.
+              <!--Потом спаны заменю на output-->
+              <div class="filter-bg">
+                <input type="range" name="min-price">
+                <input type="range" name="max-price">
+              </div>
 						</label>
 					</div>
 						<fieldset class="fat">
@@ -198,15 +208,15 @@
 								</li>
 							</ul>
 						</fieldset>
-						<button type="submit" class="btn">Применить</button>
+						<button type="submit" class="filters-btn">Применить</button>
 				</form>
 			</section>
 
 			<section class="products">
 				<h2 class="visually-hidden">Каталог мороженого</h2>
-				<ul class="products-list">
-					<li class="product-item">
-						<h3 class="name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+				<ul class="list">
+					<li class="item">
+						<h3 class="title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
 						<p class="image">
 							<img src="img/icecream-1.jpg" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
 						</p>
@@ -215,8 +225,8 @@
 						</p>
 						<p><a class="btn" href="#" title="Просмотр">Быстрый просмотр</a></p>
 					</li>
-					<li class="product-item">
-						<h3 class="name">Сливочно-кофейное с кусочками шоколада</h3>
+					<li class="item">
+						<h3 class="title">Сливочно-кофейное с кусочками шоколада</h3>
 						<p class="image">
 							<img src="img/icecream-2.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое с кусочками шоколада">
 						</p>
@@ -225,8 +235,8 @@
 						</p>
 						<p><a class="btn" href="#" title="Просмотр">Быстрый просмотр</a></p>
 					</li>
-					<li class="product-item">
-						<h3 class="name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+					<li class="item">
+						<h3 class="title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
 						<p class="image">
 							<img src="img/icecream-3.jpg" width="267" height="267" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
 						</p>
@@ -235,8 +245,8 @@
 						</p>
 						<p><a class="btn" href="#" title="Просмотр">Быстрый просмотр</a></p>
 					</li>
-					<li class="product-item">
-						<h3 class="name">Сливочное крем-брюле с карамельной подливкой</h3>
+					<li class="item">
+						<h3 class="title">Сливочное крем-брюле с карамельной подливкой</h3>
 						<p class="image">
 							<img src="img/icecream-4.jpg" width="267" height="267" alt="Сливочное мороженое крем-брюле с карамельной подливкой">
 						</p>
@@ -245,8 +255,8 @@
 						</p>
 						<p><a class="btn" href="#" title="Просмотр">Быстрый просмотр</a></p>
 					</li>
-					<li class="product-item">
-						<h3 class="name">Сливочное с брусничным джемом</h3>
+					<li class="item">
+						<h3 class="title">Сливочное с брусничным джемом</h3>
 						<p class="image">
 							<img src="img/icecream-5.jpg" width="267" height="267" alt="Сливочное мороженое с брусничным джемом">
 						</p>
@@ -255,8 +265,8 @@
 						</p>
 						<p><a class="btn" href="#" title="Просмотр">Быстрый просмотр</a></p>
 					</li>
-					<li class="product-item">
-						<h3 class="name">Сливочно-черничное с цельными ягодами черники</h3>
+					<li class="item">
+						<h3 class="title">Сливочно-черничное с цельными ягодами черники</h3>
 						<p class="image">
 							<img src="img/icecream-6.jpg" width="267" height="267" alt="Сливочно-черничное мороженое с цельными ягодами черники">
 						</p>
@@ -265,8 +275,8 @@
 						</p>
 						<p><a class="btn" href="#" title="Просмотр">Быстрый просмотр</a></p>
 					</li>
-					<li class="product-item">
-						<h3 class="name">Сливочно-лимонное с карамельной присыпкой</h3>
+					<li class="item">
+						<h3 class="title">Сливочно-лимонное с карамельной присыпкой</h3>
 						<p class="image">
 							<img src="img/icecream-7.jpg" width="267" height="267" alt="Сливочно-лимонное мороженое с карамельной присыпкой">
 						</p>
@@ -275,8 +285,8 @@
 						</p>
 						<p><a class="btn" href="#" title="Просмотр">Быстрый просмотр</a></p>
 					</li>
-					<li class="product-item">
-						<h3 class="name">Сливочное с шоколадной стружкой</h3>
+					<li class="item">
+						<h3 class="title">Сливочное с шоколадной стружкой</h3>
 						<p class="image">
 							<img src="img/icecream-8.jpg" width="267" height="267" alt="Сливочное мороженое с шоколадной стружкой">
 						</p>
@@ -285,8 +295,8 @@
 						</p>
 						<p><a class="btn" href="#" title="Просмотр">Быстрый просмотр</a></p>
 					</li>
-					<li class="product-item">
-						<h3 class="name">Сливочно-ванильное с кусочками шоколада</h3>
+					<li class="item">
+						<h3 class="title">Сливочно-ванильное с кусочками шоколада</h3>
 						<p class="image">
 							<img src="img/icecream-9.jpg" width="267" height="267" alt="Сливочно-ванильное мороженое с кусочками шоколада">
 						</p>
@@ -295,8 +305,8 @@
 						</p>
 						<p><a class="btn" href="#" title="Просмотр">Быстрый просмотр</a></p>
 					</li>
-					<li class="product-item">
-						<h3 class="name">Сливочноe с ментоловым сиропом</h3>
+					<li class="item">
+						<h3 class="title">Сливочноe с ментоловым сиропом</h3>
 						<p class="image">
 							<img src="img/icecream-10.jpg" width="267" height="267" alt="Сливочноe мороженое с ментоловым сиропом">
 						</p>
@@ -305,8 +315,8 @@
 						</p>
 						<p><a class="btn" href="#" title="Просмотр">Быстрый просмотр</a></p>
 					</li>
-					<li class="product-item">
-						<h3 class="name">Сливочное с кусочками черного шоколада</h3>
+					<li class="item">
+						<h3 class="title">Сливочное с кусочками черного шоколада</h3>
 						<p class="image">
 							<img src="img/icecream-11.jpg" width="267" height="267" alt="Сливочное мороженое с кусочками черного шоколада">
 						</p>
@@ -314,8 +324,8 @@
 							<b>355 ₽</b><span class="weight">/кг</span>
 						</p>
 					</li>
-					<li class="product-item">
-						<h3 class="name">Сливочное с мятным сиропом
+					<li class="item">
+						<h3 class="title">Сливочное с мятным сиропом
 						</h3>
 						<p class="image">
 							<img src="img/icecream-12.jpg" width="267" height="267" alt="Сливочное мороженое с мятным сиропом">
@@ -328,12 +338,12 @@
 				</ul>
 			</section>
 
-			<ul class="pagination-list">
-				<li class="active">1</li>
-				<li><a href="#">2</a></li>
-				<li><a href="#">3</a></li>
-				<li><a href="#">4</a></li>
-			</ul>
+      <ul class="pagination-list">
+        <li class="pagination-item pagination-active"><a>1</a></li>
+        <li class="pagination-item"><a href="#">2</a></li>
+        <li class="pagination-item"><a href="#">3</a></li>
+        <li class="pagination-item"><a href="#">4</a></li>
+      </ul>
 
 		</main>
 

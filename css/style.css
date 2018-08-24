@@ -1,0 +1,594 @@
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-menu,
+.submenu {
+  list-style: none;
+}
+
+.submenu {
+  background-color: #f8f7f4;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+.main-menu a {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: underline;
+}
+
+.main-menu a:hover {
+  color: #333333;
+  text-decoration: none;
+
+  background-color: #f7f6f3;
+}
+
+.main-menu a:focus {
+  color: #333333;
+  text-decoration: none;
+
+  background-color: #f7f6f3;
+  box-shadow: inset 0 2px 1px 0 #696969;
+ }
+
+.submenu a {
+  color: #323232;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+.submenu a:hover {
+  color: #323232;
+
+  background-color: #fbded7;
+}
+
+.submenu a:focus {
+  color: #323232;
+
+  background-color: #f6b5a5;
+  box-shadow: none
+;
+}
+
+.submenu a:not(.new) {
+  font-weight: 400;
+}
+
+.search,
+.login-link,
+.cart {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #ffffff;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  text-align: right;
+}
+
+.search:hover,
+.login-link:hover,
+.cart:hover {
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.maim-navigation .operating-mode {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+}
+
+.maim-navigation .phone {
+  font-size: 22px;
+  line-height: 24px;
+  text-align: right;
+}
+
+.btn {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  text-align: center;
+
+  background-image: -moz-linear-gradient( 90deg, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
+  opacity: 0.988;
+  box-shadow: 0 2px 2px 0 rgba(85, 8, 0, 0.54);
+  border: none;
+}
+
+.btn:hover {
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0 1px 2px 0 rgba(172, 16, 0, 0.004);
+  border: none;
+}
+
+.btn:focus {
+  background-image: -moz-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  box-shadow: inset 0 2px 2px 0 rgba(148, 39, 24, 0.004);
+  border: none; /*при нажатии на кнопку типа батон не убирается стандартная синяя рамка*/
+}
+
+.slides h3 {
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.slides .btn {
+  font-size: 32px;
+  line-height: 44px;
+
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+}
+
+.slide-1 {
+  background-color: #849d8f;
+}
+
+.slide-2 {
+  background-color: #8996a6;
+}
+
+.slide-3 {
+  background-color: #9d8b84;
+}
+
+.slides .switches {
+  list-style: none;
+}
+
+.special-offer .list {
+  list-style: none;
+}
+
+.special-offer h3 {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.special-offer p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.special-offer li:first-of-type {
+  background-image: url("../img/raspberry.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.special-offer li:last-of-type {
+  background-image: url("../img/chocolate.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.products .list {
+  list-style: none;
+}
+
+.products .name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.products .name:hover,
+.products .name:focus {
+  color: #ffbc9e;
+  text-decoration: none;
+}
+
+.price {
+  line-height: 45px;
+  text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.price b {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.price .weight {
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.features {
+  color: #323232;
+
+  background-color: #eaddc0;
+  background-image: url("../img/waffle.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.features .tip {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.features .list {
+  list-style: none;
+}
+
+.features .item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.blog-new {
+  color: #323232;
+
+  background-color: #ffffff;
+  background-image: url("../img/preview.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.blog-new h2 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.blog-new a {
+  color: #323232;
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: underline;
+}
+
+.blog-new a:hover,
+.blog-new a:focus{
+  color: #e84d37;
+  text-decoration: none;
+}
+
+.subscribe {
+  background-color: #f8f7f4;
+  background-image: url("../img/post.svg"); /*Не отображается svg*/
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.subscribe .content {
+  background-color: #f8f7f4;
+}
+
+.subscribe .tip {
+  color: #5a5a5a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.subscribe input {
+  color: #323232; /*как изменить формат текста placeholder?*/
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+
+  border: solid 1px #b2b2b2;
+}
+
+.contacts {
+  color: #323232;
+
+  background-color: #fffefe;
+}
+
+.contacts h3 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.contacts address {
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.contacts .phone {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.contacts .operating-mode {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.container h1 {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: underline;
+
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  color: #ffbc9e;
+  text-decoration: none;
+}
+
+.breadcrumbs-active {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.sort label,
+.filter-price label,
+.filters legend {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.sort select {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sort select:hover {
+  color: #323232;
+}
+
+.sort option {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.filter-bg {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.filters ul {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.filters-btn {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+
+  border: 2px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.filters-btn:hover {
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.filters-btn:focus {
+  color: #323232;
+
+  background-color: #ededed;
+  box-shadow: inset 0 2px 1px 0 #696969;
+}
+
+.products .title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.products .item:hover {
+  background-color: rgba(255,255, 255, 0.2);
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-list a {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.pagination-item a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination-list a:focus {
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.pagination-active a,
+.pagination-active a:hover,
+.pagination-active a:focus{
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+
+.social ul {
+  list-style: none;
+}
+
+.social a {
+  color: #ffffff;
+}
+
+.documents h2 {
+  font-size: 13px;
+  line-height: 18px;
+  text-decoration: underline;
+}
+
+.documents .list {
+  list-style: none;
+}
+
+.documents a {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: underline;
+}
+
+.documents a:hover,
+.documents a:focus {
+  color: #ffbc9e;
+  text-decoration: none;
+}
+
+.copyright {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.copyright a {
+  color: #ffffff;
+  text-decoration: underline; /*И опять не отображается svg логотип академии*/
+}
+
+.copyright a:hover,
+.copyright a:focus {
+  color: #ffbc9e;
+  text-decoration: none;
+}
+
+.modal {
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.modal input {
+  color: #323232; /*как изменить формат текста placeholder?*/
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+
+  border: solid 1px #b2b2b2;
+}
+
+.modal input:hover {
+  border: 2px solid #9a9a9a; /*цвет не похож на тот, что в макете, хотя в настройках цветов фотошопа все в порядке*/
+}
+/*если взять цвет пипеткой, он получается другой, чем если копировать стили в css из фотошопа*/
+
+.modal input:focus {
+  border: 2px solid #2e88e4;
+}
+
+
+.modal-login a {
+  color:#323232;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: underline;
+}
+
+.modal-login a:hover,
+.modal-login a:focus {
+  color: #e84d37;
+  text-decoration: none;
+}
+
+.modal:not(.modal-feedback) {
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.modal-feedback h2{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.modal-fullcart {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.cart-price {
+  color: #999999;
+}
+
+.modal-fullcart .total {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+/*А еще не могу экспортировать знак рубля в svg*/
