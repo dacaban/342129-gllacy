@@ -119,7 +119,6 @@ a {
 
 .btn:hover {
   background-image: linear-gradient(to top, #e74a35, #f26843), linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
-
   box-shadow: 0 1px 2px 0 #ac1000;
   border: none;
 }
@@ -140,6 +139,10 @@ a {
   line-height: 44px;
 
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+}
+
+.slides .btn:hover {
+  box-shadow: 0 2px 2px 0 #ac1000;
 }
 
 .slide-1 {
@@ -200,7 +203,7 @@ a {
 
 .price {
   line-height: 45px;
-  text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
 
 .price b,
@@ -282,7 +285,7 @@ a {
   line-height: 24px;
   font-weight: 700;
 
-  border: solid 1px #b2b2b2;
+  border: solid 1px rgba(178, 178, 178, 0.52);
 }
 
 .subscribe input:placeholder-shown {
@@ -305,7 +308,7 @@ a {
 .contacts {
   color: #323232;
 
-  background-color: #fffefe;
+  background-color: #ffffff;
 }
 
 .contacts h3 {
@@ -533,7 +536,7 @@ a {
   line-height: 24px;
   font-weight: 700;
 
-  border: solid 1px #b2b2b2;
+  border: solid 1px rgba(178, 178, 178, 0.52);
 }
 
 .modal input:placeholder-shown,
