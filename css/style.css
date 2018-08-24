@@ -206,13 +206,10 @@ a {
   text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
 }
 
-.price b {
+.price b,
+.price .currency{
   font-size: 45px;
   font-weight: 700;
-}
-
-.price img {
-  text-shadow: 5px 5px 3px rgba(49, 50, 53, 0.5);
 }
 
 .price .weight {
