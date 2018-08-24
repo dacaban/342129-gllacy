@@ -129,6 +129,11 @@ a {
   border: none; /*при нажатии на кнопку типа батон не убирается стандартная синяя рамка*/
 }
 
+.btn:focus{
+  outline: none;
+  box-shadow: 0 0 5px 3px #942718;
+}
+
 .slides h3 {
   font-size: 60px;
   line-height: 60px;
