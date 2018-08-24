@@ -264,7 +264,6 @@ a {
 }
 
 .subscribe {
-  /*Не отображается svg*/
   background: #f8f7f4 url("../img/post.svg") repeat 0 0;
 }
 
