@@ -113,27 +113,22 @@ a {
   text-decoration: none;
   text-align: center;
 
-  background-image: -moz-linear-gradient( 90deg, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
-  opacity: 0.988;
+  opacity: 0.99;
+  background-image: linear-gradient(to top, #ca3824, #f26843);
   box-shadow: 0 2px 2px 0 rgba(85, 8, 0, 0.54);
   border: none;
 }
 
 .btn:hover {
-  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  box-shadow: 0 1px 2px 0 rgba(172, 16, 0, 0.004);
+  background-image: linear-gradient(to top, #e74a35, #f26843), linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+
+  box-shadow: 0 1px 2px 0 #ac1000;
   border: none;
 }
 
 .btn:focus {
-  background-image: -moz-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
-  box-shadow: inset 0 2px 2px 0 rgba(148, 39, 24, 0.004);
+  background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+  box-shadow: inset 0 2px 2px 0 #942718;
   border: none; /*при нажатии на кнопку типа батон не убирается стандартная синяя рамка*/
 }
 
@@ -180,15 +175,11 @@ a {
 }
 
 .special-offer li:first-of-type {
-  background-image: url("../img/raspberry.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: url("../img/raspberry.jpg") no-repeat 0 0;
 }
 
 .special-offer li:last-of-type {
-  background-image: url("../img/chocolate.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: url("../img/chocolate.jpg") no-repeat 0 0;
 }
 
 .products .list {
@@ -220,6 +211,10 @@ a {
   font-weight: 700;
 }
 
+.price img {
+  text-shadow: 5px 5px 3px rgba(49, 50, 53, 0.5);
+}
+
 .price .weight {
   font-size: 30px;
   line-height: 45px;
@@ -228,10 +223,7 @@ a {
 .features {
   color: #323232;
 
-  background-color: #eaddc0;
-  background-image: url("../img/waffle.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
+  background: #eaddc0 url("../img/waffle.jpg") repeat 0 0;
 }
 
 .features .tip {
@@ -253,10 +245,7 @@ a {
 .blog-new {
   color: #323232;
 
-  background-color: #ffffff;
-  background-image: url("../img/preview.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #ffffff url("../img/preview.jpg") no-repeat 0 0;
 }
 
 .blog-new h2 {
@@ -279,10 +268,8 @@ a {
 }
 
 .subscribe {
-  background-color: #f8f7f4;
-  background-image: url("../img/post.svg"); /*Не отображается svg*/
-  background-position: 0 0;
-  background-repeat: repeat;
+  /*Не отображается svg*/
+  background: #f8f7f4 url("../img/post.svg") repeat 0 0;
 }
 
 .subscribe .content {
@@ -517,7 +504,7 @@ a {
 
 .copyright a {
   color: #ffffff;
-  text-decoration: underline; /*И опять не отображается svg логотип академии*/
+  text-decoration: underline;
 }
 
 .copyright a:hover,
