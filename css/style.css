@@ -4,8 +4,9 @@
 }
 
 body {
+  width: 1200px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -236,11 +237,25 @@ a {
   list-style: none;
 }
 
+.special-offer {
+  margin-bottom: 40px;
+}
+
 .special-offer .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.special-offer .item {
+  width: 560px;
+  padding: 23px 20px;
 }
 
 .special-offer h3 {
+  margin: 0;
   font-size: 35px;
   line-height: 41px;
 }
@@ -251,10 +266,12 @@ a {
 }
 
 .special-offer li:first-of-type {
+  margin-left: 27px;
   background: url("../img/raspberry.jpg") no-repeat 0 0;
 }
 
 .special-offer li:last-of-type {
+  margin-right: 27px;
   background: url("../img/chocolate.jpg") no-repeat 0 0;
 }
 
