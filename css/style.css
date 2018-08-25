@@ -195,6 +195,13 @@ a {
   box-shadow: 0 0 5px 3px #942718;
 }
 
+.slides .image {
+  width: 1065px;
+  height: 859px;
+  margin: 0 auto;
+
+}
+
 .slides h3 {
   font-size: 60px;
   line-height: 60px;
@@ -224,6 +231,8 @@ a {
 }
 
 .slides .switches {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
