@@ -240,6 +240,7 @@ a {
 }
 
 .special-offer {
+  padding: 0 27px;
   margin-bottom: 40px;
 }
 
@@ -248,12 +249,12 @@ a {
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: space-between;
 }
 
 .special-offer .item {
-  width: 560px;
+  flex-basis: 50%;
   padding: 23px 20px;
+  margin-left: 26px;
 }
 
 .special-offer h3 {
@@ -269,12 +270,11 @@ a {
 }
 
 .special-offer li:first-of-type {
-  margin-left: 27px;
+  margin-left: 0;
   background: url("../img/raspberry.jpg") no-repeat 0 0;
 }
 
 .special-offer li:last-of-type {
-  margin-right: 27px;
   background: url("../img/chocolate.jpg") no-repeat 0 0;
 }
 
