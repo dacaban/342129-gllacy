@@ -168,6 +168,10 @@ a {
   text-align: right;
 }
 
+.container {
+  padding: 0 27px;
+}
+
 .btn {
   color: #ffffff;
   font-size: 18px;
@@ -240,7 +244,7 @@ a {
 }
 
 .special-offer {
-  padding: 0 27px;
+  padding: 0;
   margin-bottom: 40px;
 }
 
@@ -287,7 +291,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
-  padding: 0 27px;
+  padding: 0;
   list-style: none;
 }
 
@@ -348,8 +352,9 @@ a {
 }
 
 .features {
-  margin: 0 27px;
+  margin: 0;
   padding: 20px;
+  margin-bottom: 40px;
 
   color: #323232;
 
@@ -381,7 +386,18 @@ a {
   line-height: 22px;
 }
 
+.index-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
 .blog-new {
+  flex-basis: 520px;
+  height: 180px;
+  margin-right: 26px;
+  padding: 20px;
+
   color: #323232;
 
   background: #ffffff url("../img/preview.jpg") no-repeat 0 0;
@@ -406,8 +422,13 @@ a {
 }
 
 .subscribe {
+  flex-basis: 560px;
+  height: 220px;
+  margin-right: 0;
+
   background: #f8f7f4 url("../img/post.svg") repeat 0 0;
 }
+
 
 .subscribe .content {
   background-color: #f8f7f4;
@@ -447,32 +468,51 @@ a {
 }
 
 .contacts {
+  width: 242px;
+  height: 255px;
+  padding: 30px 25px;
   color: #323232;
+
+  position: absolute;
 
   background-color: #ffffff;
 }
 
 .contacts h3 {
+  margin: 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
 }
 
 .contacts address {
+  margin: 0;
   font-size: 18px;
   font-style: normal;
   line-height: 24px;
 }
 
 .contacts .phone {
+  margin: 0;
   font-size: 18px;
   line-height: 22px;
 }
 
 .contacts .operating-mode {
+  margin: 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
+}
+
+.contacts h2 {
+  margin: 0; /*Временно, пока не скрою его*/
+}
+
+.map img {
+  width: 1200px;
+  height: 430px;
+  margin-left: -27px;
 }
 
 .container h1 {
