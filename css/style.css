@@ -558,9 +558,27 @@ a {
   line-height: 16px;
 }
 
+.filters {
+  margin-bottom: 40px;
+}
+
+.filters-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
 .filters fieldset {
   border: none;
 }
+
+.sort,
+.filter-price,
+.fat,
+.additive {
+  margin-right: 15px;
+}
+
 
 .sort label,
 .filter-price label,
@@ -597,6 +615,8 @@ a {
 }
 
 .filters ul {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -605,6 +625,8 @@ a {
 }
 
 .filters-btn {
+  width: 144px;
+  height: 37px;
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
