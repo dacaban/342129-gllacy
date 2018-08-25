@@ -15,6 +15,8 @@ body {
   color: #ffffff;
 
   background-color: #849d8f;
+
+  border: 1px solid black; /*временно для наглядности*/
 }
 
 a {
@@ -277,10 +279,36 @@ a {
 }
 
 .products .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 27px;
   list-style: none;
 }
 
+.products .item {
+  width: 267px;
+  display: flex;
+  flex-direction: column;
+}
+
+.products .box-name {
+  order: 2;
+}
+
+.products .title {
+  margin: 0;
+  order: 1;
+}
+
+.products .quick-view {
+  margin: 0;
+  order: 2;
+}
+
 .products .name {
+  margin: 0;
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
@@ -294,7 +322,12 @@ a {
   color: #ffbc9e;
 }
 
+.products .image {
+  margin: 0;
+}
+
 .price {
+  margin: 0;
   line-height: 45px;
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
