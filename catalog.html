@@ -14,97 +14,97 @@
 
 	<header class="main-header">
 
-		<a title="На глвную" href="index.html"><img class="logo" src="img/logo.svg" width="154" height="64" alt="«Gllacy Shop»"></a>
 		<nav class="maim-navigation">
-			<ul class="main-menu">
+      <a title="На глвную" href="index.html"><img class="logo" src="img/logo.svg" width="154" height="64" alt="«Gllacy Shop»"></a>
+      <ul class="main-menu">
 				<li class="active"><a>Каталог</a></li>
 				<li><a title="Информация о доставке и оплате" href="#">Доставка и оплата</a></li>
 				<li><a title="Информация о компании" href="#">О компании</a></li>
 			</ul>
+      <div class="user-navigation">
+        <p>
+          <button type="button" class="search">Поиск</button>
+        </p>
 
-			<p>
-				<button type="button" class="search">Поиск</button>
-			</p>
+        <div class="modal modal-search">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden">
+              Поиск
+              <input type="search" name="search" value="" placeholder="Что ищем?">
+            </label>
+          </form>
+        </div>
 
-			<div class="modal modal-search">
-				<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-					<label class="visually-hidden">
-						Поиск
-						<input type="search" name="search" value="" placeholder="Что ищем?">
-					</label>
-				</form>
-			</div>
+        <a class="login-link" href="login.html" title="Войти в личный кабинет">Вход</a>
 
-			<a class="login-link" href="login.html" title="Войти в личный кабинет">Вход</a>
+        <section class="modal modal-login">
+          <h2>Войти</h2>
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label class="visually-hidden">
+                Электронная почта
+                <input type="text" name="email" placeholder="Электронная почта">
+              </label>
+            </p>
+            <p>
+              <label class="visually-hidden">
+                Пароль
+                <input type="password" name="password" placeholder="Пароль">
+              </label>
+             </p>
+             <p>
+              <a title="Восстановить пароль" href="#">Забыли пароль?</a>
+            </p>
+            <p>
+              <a title="Зарегистрироваться" href="#">Новая регистрация</a>
+            </p>
+            <button class="btn" type="submit">Войти</button>
+          </form>
+        </section>
 
-			<section class="modal modal-login">
-				<h2>Войти</h2>
-				<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-		      <p>
-			      <label class="visually-hidden">
-			      	Электронная почта
-			      	<input type="text" name="email" placeholder="Электронная почта">
-			      </label>
-		      </p>
-		      <p>
-			      <label class="visually-hidden">
-			      	Пароль
-			      	<input type="password" name="password" placeholder="Пароль">
-			      </label>
-				   </p>
-				   <p>
-						<a title="Восстановить пароль" href="#">Забыли пароль?</a>
-					</p>
-					<p>
-						<a title="Зарегистрироваться" href="#">Новая регистрация</a>
-					</p>
-					<button class="btn" type="submit">Войти</button>
-				</form>
-			</section>
+          <a href="#" title="Корзина" class="cart full">2 товара</a>
 
-				<a href="#" title="Корзина" class="cart full">2 товара</a>
-
-			<section class="modal modal-fullcart">
-				<table border="1">
-					<tr class="visually-hidden">
-						<th>Убрать</th>
-						<th>Картинка</th>
-						<th>Название</th>
-						<th>Количество</th>
-						<th>&#215;</th>
-						<th>Цена за кг</th>
-						<th>Стоимость</th>
-					</tr>
-					<tr>
-						<td><button class="btn" type="button">Убрать</button></td>
-						<td><img src="img/basket-icecream-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-						<td>Пломбир с апельсиновым джемом</td>
-						<td>1,5 кг</td>
-						<td>&#215;</td>
-						<td class="cart-price">200 руб.</td>
-						<td>300 руб.</td>
-					</tr>
-					<tr>
-						<td><button class="btn" type="button">Убрать</button></td>
-						<td><img src="img/basket-icecream-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-						<td>Клубничный пломбир с присыпкой из белого шоколада</td>
-						<td>1,5 кг</td>
-						<td>&#215;</td>
-						<td class="cart-price">300 руб.</td>
-						<td>450 руб.</td>
-					</tr>
-					<tr>
-						<td colspan="6" class="total">Итого:</td>
-						<td class="total">750 руб.</td>
-					</tr>
-				</table>
-				<a title="Оформить" class="btn" href="#">Оформить заказ</a>
-			</section>
-				<p>
-          <span class="operating-mode">С 10 до 20, ежедневно</span>
-          <br>
-          <span class="phone">8 812 450-25-25</span>
-				</p>
+        <section class="modal modal-fullcart">
+          <table border="1">
+            <tr class="visually-hidden">
+              <th>Убрать</th>
+              <th>Картинка</th>
+              <th>Название</th>
+              <th>Количество</th>
+              <th>&#215;</th>
+              <th>Цена за кг</th>
+              <th>Стоимость</th>
+            </tr>
+            <tr>
+              <td><button class="btn" type="button">Убрать</button></td>
+              <td><img src="img/basket-icecream-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+              <td>Пломбир с апельсиновым джемом</td>
+              <td>1,5 кг</td>
+              <td>&#215;</td>
+              <td class="cart-price">200 руб.</td>
+              <td>300 руб.</td>
+            </tr>
+            <tr>
+              <td><button class="btn" type="button">Убрать</button></td>
+              <td><img src="img/basket-icecream-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td>1,5 кг</td>
+              <td>&#215;</td>
+              <td class="cart-price">300 руб.</td>
+              <td>450 руб.</td>
+            </tr>
+            <tr>
+              <td colspan="6" class="total">Итого:</td>
+              <td class="total">750 руб.</td>
+            </tr>
+          </table>
+          <a title="Оформить" class="btn" href="#">Оформить заказ</a>
+        </section>
+        <div class="box-info">
+          <p class="operating-mode">С 10 до 20, ежедневно</p>
+          <p class="phone">8 812 450-25-25</p>
+        </div>
+      </div>
 		</nav>
 
 		</header>

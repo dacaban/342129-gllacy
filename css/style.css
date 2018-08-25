@@ -1,3 +1,8 @@
+.modal,
+.submenu{
+  display: none; /*Временно для верстки сетки, чтоб не мешалось*/
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -15,9 +20,46 @@ a {
   text-decoration: none;
 }
 
+.maim-navigation {
+  display: flex;
+}
+
+.logo {
+  width: 154px;
+  height: 64px;
+  margin-left: 25px;
+  margin-top: 10px;
+  margin-bottom: auto;
+}
+
 .main-menu,
 .submenu {
   list-style: none;
+}
+
+.main-menu {
+  width: 350px;
+  margin: 0;
+  padding: 0;
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-bottom: auto;
+}
+
+.user-navigation>p {
+  margin: 0;
+}
+
+.user-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 245px;
+  margin-right: 25px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-bottom: auto;
 }
 
 .submenu {
@@ -71,6 +113,18 @@ a {
   font-weight: 400;
 }
 
+.search {
+  width: 33px;
+}
+
+.login-link {
+  width: 93px;
+}
+
+.cart {
+  width: 100px;
+}
+
 .search,
 .login-link,
 .cart {
@@ -93,12 +147,19 @@ a {
 }
 
 .maim-navigation .operating-mode {
+  margin: 0;
   font-size: 14px;
   line-height: 16px;
   text-align: right;
 }
 
+.box-info {
+  margin-top: 20px;
+  flex-grow: 2;
+}
+
 .maim-navigation .phone {
+  margin: 0;
   font-size: 22px;
   line-height: 24px;
   text-align: right;
