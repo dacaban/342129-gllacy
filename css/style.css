@@ -278,6 +278,10 @@ a {
   background: url("../img/chocolate.jpg") no-repeat 0 0;
 }
 
+.products {
+  margin-bottom: 40px;
+}
+
 .products .list {
   display: flex;
   flex-wrap: wrap;
@@ -344,22 +348,34 @@ a {
 }
 
 .features {
+  margin: 0 27px;
+  padding: 20px;
+
   color: #323232;
 
   background: #eaddc0 url("../img/waffle.jpg") repeat 0 0;
 }
 
 .features .tip {
+  margin: 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
 }
 
 .features .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .features .item {
+  padding-top: 25px;
+  width: 476px;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
