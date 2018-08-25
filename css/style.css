@@ -664,6 +664,11 @@ a {
 }
 
 .pagination-list {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -672,6 +677,10 @@ a {
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 20px;
 }
 
 .pagination-item a:hover {
