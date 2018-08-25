@@ -261,6 +261,7 @@ a {
 }
 
 .special-offer p {
+  margin: 0;
   font-size: 18px;
   line-height: 22px;
 }
