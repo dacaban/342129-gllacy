@@ -289,7 +289,7 @@ a {
 .products .list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -297,8 +297,13 @@ a {
 
 .products .item {
   width: 267px;
+  margin-right: 26px;
   display: flex;
   flex-direction: column;
+}
+
+.products .item:nth-child(4n){
+  margin-right: 0;
 }
 
 .products .box-name {
