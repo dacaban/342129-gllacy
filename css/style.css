@@ -394,7 +394,7 @@ a {
 
 .blog-new {
   flex-basis: 520px;
-  height: 180px;
+  min-height: 180px;
   margin-right: 26px;
   padding: 20px;
 
@@ -423,7 +423,7 @@ a {
 
 .subscribe {
   flex-basis: 560px;
-  height: 220px;
+  min-height: 220px;
   margin-right: 0;
 
   background: #f8f7f4 url("../img/post.svg") repeat 0 0;
