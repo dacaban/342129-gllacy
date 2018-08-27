@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Онлайн-магазин мороженого Глейси">
+    <meta name="format-detection" content="telephone=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <title>Глейси</title>
     <link href="css/normalize.css" rel="stylesheet">
@@ -14,9 +15,9 @@
 		<header class="main-header">
 
 			<h1 class="visually-hidden">Магазин Глейси</h1>
-			<a href="index.html" title="На главную"><img class="logo" src="img/logo.svg" width="154" height="64" alt="«Gllacy Shop»"></a>
 			<nav class="maim-navigation">
-				<ul class="main-menu">
+        <a href="index.html" title="На главную"><img class="logo" src="img/logo.svg" width="154" height="64" alt="«Gllacy Shop»"></a>
+        <ul class="main-menu">
 					<li>
 						<a title="Перейти в каталог" href="catalog.html">Каталог</a>
 						<ul class="submenu">
@@ -30,52 +31,53 @@
 					<li><a title="Информация о доставке и оплате" href="#">Доставка и оплата</a></li>
 					<li><a title="Информация о компании" href="#">О компании</a></li>
 				</ul>
-				<p>
-				<button type="button" class="search">Поиск</button>
-				</p>
+        <div class="user-navigation">
+          <p>
+          <button type="button" class="search">Поиск</button>
+          </p>
 
-				<div class="modal modal-search">
-					<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-						<label class="visually-hidden">
-							Поиск
-							<input type="search" name="search" value="" placeholder="Что ищем?">
-						</label>
-					</form>
-				</div>
+          <div class="modal modal-search">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+              <label class="visually-hidden">
+                Поиск
+                <input type="search" name="search" value="" placeholder="Что ищем?">
+              </label>
+            </form>
+          </div>
 
-				<a class="login-link" href="login.html" title="Войти в личный кабинет">Вход</a>
+          <a class="login-link" href="login.html" title="Войти в личный кабинет">Вход</a>
 
-				<section class="modal modal-login">
-					<h2>Войти</h2>
-					<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-		      	<p>
-			      	<label class="visually-hidden">
-			      		Электронная почта
-			      		<input type="text" name="email" placeholder="Электронная почта">
-			      	</label>
-		      	</p>
-		      	<p>
-			      	<label class="visually-hidden">
-			      		Пароль
-			      		<input type="password" name="password" placeholder="Пароль">
-			      	</label>
-				    </p>
-				    <p>
-							<a title="Восстановить пароль" href="#">Забыли пароль?</a>
-						</p>
-						<p>
-							<a title="Зарегистрироваться" href="#">Новая регистрация</a>
-						</p>
-						<button class="btn" type="submit">Войти</button>
-					</form>
-				</section>
+          <section class="modal modal-login">
+            <h2>Войти</h2>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden">
+                  Электронная почта
+                  <input type="text" name="email" placeholder="Электронная почта">
+                </label>
+              </p>
+              <p>
+                <label class="visually-hidden">
+                  Пароль
+                  <input type="password" name="password" placeholder="Пароль">
+                </label>
+              </p>
+              <p>
+                <a title="Восстановить пароль" href="#">Забыли пароль?</a>
+              </p>
+              <p>
+                <a title="Зарегистрироваться" href="#">Новая регистрация</a>
+              </p>
+              <button class="btn" type="submit">Войти</button>
+            </form>
+          </section>
 
-				<a href="#" title="Корзина" class="cart empty">Пусто</a>
-        <p>
-          <span class="operating-mode">С 10 до 20, ежедневно</span>
-          <br>
-          <span class="phone">8 812 450-25-25</span>
-        </p>
+          <a href="#" title="Корзина" class="cart empty">Пусто</a>
+          <div class="box-info">
+            <p class="operating-mode">С 10 до 20, ежедневно</p>
+            <p class="phone">8 812 450-25-25</p>
+          </div>
+        </div>
 			</nav>
 
 		</header>
@@ -141,55 +143,63 @@
 				<h2 class="visually-hidden">Наши предложения</h2>
 				<ul class="list">
 					<li class="item">
-						<a title="Просмотр" href="#">
+						<a class="box-name" title="Просмотр" href="#">
 							<h3 class="name">
 								Сливочное с апельсиновым джемом и цитрусовой стружкой
 							</h3>
+            </a>
+            <a title="Просмотр" href="#">
 							<p class="image">
 								<img src="img/icecream-1.jpg" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
 							</p>
 						</a>
 						<p class="price">
-							<b>310 ₽</b><span class="weight">/кг</span>
+              <b>310</b><span class="currency">&#8381</span><span class="weight">/кг</span>
 						</p>
 					</li>
 					<li class="item">
-						<a title="Просмотр" href="#">
+						<a class="box-name" title="Просмотр" href="#">
 							<h3 class="name">
 								Сливочно-кофейное с кусочками шоколада
 							</h3>
+            </a>
+            <a title="Просмотр" href="#">
 							<p class="image">
 								<img src="img/icecream-2.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое с кусочками шоколада">
 							</p>
 						</a>
 						<p class="price">
-							<b>380 ₽</b><span class="weight">/кг</span>
+							<b>380</b><span class="currency">&#8381</span><span class="weight">/кг</span>
 						</p>
 					</li>
 					<li class="item">
-						<a title="Просмотр" href="#">
+						<a class="box-name" title="Просмотр" href="#">
 							<h3 class="name">
 								Сливочно-клубничное с присыпкой из белого шоколада
 							</h3>
+            </a>
+            <a title="Просмотр" href="#">
 							<p class="image">
 								<img src="img/icecream-3.jpg" width="267" height="267" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
 							</p>
 						</a>
 						<p class="price">
-							<b>355 ₽</b><span class="weight">/кг</span>
+							<b>355</b><span class="currency">&#8381</span><span class="weight">/кг</span>
 						</p>
 					</li>
 					<li class="item">
-						<a title="Просмотр" href="#">
+						<a class="box-name" title="Просмотр" href="#">
 							<h3 class="name">
 								Сливочное крем-брюле с карамельной подливкой
 							</h3>
+            </a>
+            <a title="Просмотр" href="#">
 							<p class="image">
 								<img src="img/icecream-4.jpg" width="267" height="267" alt="Сливочное мороженое крем-брюле с карамельной подливкой">
 							</p>
 						</a>
 						<p class="price">
-							<b>415 ₽</b><span class="weight">/кг</span>
+							<b>415</b><span class="currency">&#8381</span><span class="weight">/кг</span>
 						</p>
 					</li>
 				</ul>
@@ -200,40 +210,42 @@
 				<p class="tip">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
 				<ul class="list">
 					<li class="item">
-						<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+						Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+					</li>
+          <li class="item">
+            Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+          </li>
+					<li class="item">
+            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
 					</li>
 					<li class="item">
-						<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-					</li>
-					<li class="item">
-						<p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-					</li>
-					<li class="item">
-						<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+						Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
 					</li>
 				</ul>
 			</section>
 
-			<article class="blog-new">
-				<h2>Новое в нашем блоге</h2>
-				<h3>
-					<a title="Читать" href="#">10 способов сервировки фруктовых щербетов к столу</a>
-				</h3>
-			</article>
+      <div class="index-box">
+        <article class="blog-new">
+          <h2>Новое в нашем блоге</h2>
+          <h3>
+            <a title="Читать" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+          </h3>
+        </article>
 
-			<section class="subscribe">
-        <div class="content">
-          <h2 class="visually-hidden">Подписаться</h2>
-          <p class="tip">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form class="form" action="https://echo.htmlacademy.ru" method="post">
-              <label class="visually-hidden">
-                Электронная почта
-                <input type="text" name="email" value="" placeholder="Электронная почта">
-              </label>
-              <button class="btn" type="submit" aria-label="Подписаться на рассылку">Отправить</button>
-          </form>
-        </div>
-			</section>
+        <section class="subscribe">
+          <div class="content">
+            <h2 class="visually-hidden">Подписаться</h2>
+            <p class="tip">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <form class="form" action="https://echo.htmlacademy.ru" method="post">
+                <label class="visually-hidden">
+                  Электронная почта
+                  <input type="text" name="email" value="" placeholder="Электронная почта">
+                </label>
+                <button class="btn" type="submit" aria-label="Подписаться на рассылку">Отправить</button>
+            </form>
+          </div>
+        </section>
+      </div>
 
 
 			<div class="modal modal-feedback">
@@ -278,9 +290,7 @@
 
 			<section class="map">
 				<h2 class="visually-hidden">Как до нас добраться</h2>
-				<p>
-      			<img src="img/map.jpg" width="1250" height="430" alt="Мы находимся по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
-  			</p>
+        <img src="img/map.jpg" width="1250" height="430" alt="Мы находимся по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
 			</section>
 
 		</main>
@@ -297,20 +307,20 @@
         </ul>
 			</div>
 
-			<div class="documents">
-				<span class="heart">Сердечко </span><h2>Для поставщиков</h2>
-        <!--Не могу понять: "Для поставщиков" - это загловок или еще один документ?
-        В том смысле, нужно его делать ссылкой и менять цвет при наведении?-->
+			<section class="documents">
+        <h2 class="visually-hidden">Документы</h2>
 				<ul class="list">
+          <li><span class="heart">Сердечко </span><a title="Перейти" href="#">Для поставщиков</a></li>
 					<li><a title="Перейти" href="#">О производстве</a></li>
 					<li><a title="Перейти" href="#">Наши документы</a></li>
 					<li><a title="Перейти" href="#">Экологические стандарты</a></li>
 				</ul>
-			</div>
+			</section>
 
 			<p class="copyright">
-				<a title="HTML Академия" href="https://htmlacademy.ru/intensive/htmlcss"><img class="logo-html" src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Академия"></a>
-				<span>Сделано в </span>
+				<a title="HTML Академия" href="https://htmlacademy.ru/intensive/htmlcss"><img class="logo-html" src="img/logo-htmlacademy.svg" width="118" height="38" alt="HTML Академия"></a>
+				<br>
+        <span>Сделано в </span>
         <a title="HTML Академия" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
         <span>&copy; 2017</span>
 			</p>

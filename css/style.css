@@ -1,6 +1,12 @@
+.modal,
+.submenu{
+  display: none; /*Временно для верстки сетки, чтоб не мешалось*/
+}
+
 body {
+  width: 1200px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -9,15 +15,54 @@ body {
   color: #ffffff;
 
   background-color: #849d8f;
+
+  /*border: 1px solid black; !*временно для наглядности*!*/
 }
 
 a {
   text-decoration: none;
 }
 
+.maim-navigation {
+  display: flex;
+}
+
+.logo {
+  width: 154px;
+  height: 64px;
+  margin-left: 25px;
+  margin-top: 10px;
+  margin-bottom: auto;
+}
+
 .main-menu,
 .submenu {
   list-style: none;
+}
+
+.main-menu {
+  width: 350px;
+  margin: 0;
+  padding: 0;
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-bottom: auto;
+}
+
+.user-navigation>p {
+  margin: 0;
+}
+
+.user-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 245px;
+  margin-right: 25px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-bottom: auto;
 }
 
 .submenu {
@@ -35,16 +80,14 @@ a {
 
 .main-menu a:hover {
   color: #333333;
-  text-decoration: none;
 
   background-color: #f7f6f3;
 }
 
-.main-menu a:focus {
+.main-menu a:active {
   color: #333333;
-  text-decoration: none;
 
-  background-color: #f7f6f3;
+  background-color: #ededed;
   box-shadow: inset 0 2px 1px 0 #696969;
  }
 
@@ -61,7 +104,7 @@ a {
   background-color: #fbded7;
 }
 
-.submenu a:focus {
+.submenu a:active {
   color: #323232;
 
   background-color: #f6b5a5;
@@ -71,6 +114,18 @@ a {
 
 .submenu a:not(.new) {
   font-weight: 400;
+}
+
+.search {
+  width: 33px;
+}
+
+.login-link {
+  width: 93px;
+}
+
+.cart {
+  width: 100px;
 }
 
 .search,
@@ -95,15 +150,26 @@ a {
 }
 
 .maim-navigation .operating-mode {
+  margin: 0;
   font-size: 14px;
   line-height: 16px;
   text-align: right;
 }
 
+.box-info {
+  margin-top: 20px;
+  flex-grow: 2;
+}
+
 .maim-navigation .phone {
+  margin: 0;
   font-size: 22px;
   line-height: 24px;
   text-align: right;
+}
+
+.container {
+  padding: 0 27px;
 }
 
 .btn {
@@ -113,33 +179,40 @@ a {
   text-decoration: none;
   text-align: center;
 
-  background-image: -moz-linear-gradient( 90deg, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
-  opacity: 0.988;
+  opacity: 0.99;
+  background-image: linear-gradient(to top, #ca3824, #f26843);
   box-shadow: 0 2px 2px 0 rgba(85, 8, 0, 0.54);
   border: none;
 }
 
 .btn:hover {
-  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  box-shadow: 0 1px 2px 0 rgba(172, 16, 0, 0.004);
+  background-image: linear-gradient(to top, #e74a35, #f26843), linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  box-shadow: 0 1px 2px 0 #ac1000;
   border: none;
 }
 
-.btn:focus {
-  background-image: -moz-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
-  box-shadow: inset 0 2px 2px 0 rgba(148, 39, 24, 0.004);
+.btn:active {
+  background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+  box-shadow: inset 0 2px 2px 0 #942718;
   border: none; /*при нажатии на кнопку типа батон не убирается стандартная синяя рамка*/
+}
+
+.btn:focus{
+  outline: none;
+  box-shadow: 0 0 5px 3px #942718;
+}
+
+.slides .image {
+  width: 1065px;
+  height: 859px;
+  margin: 0 auto;
+
 }
 
 .slides h3 {
   font-size: 60px;
   line-height: 60px;
+  text-align: center;
 }
 
 .slides .btn {
@@ -147,6 +220,10 @@ a {
   line-height: 44px;
 
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+}
+
+.slides .btn:hover {
+  box-shadow: 0 2px 2px 0 #ac1000;
 }
 
 .slide-1 {
@@ -162,40 +239,84 @@ a {
 }
 
 .slides .switches {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.special-offer {
+  margin-bottom: 40px;
 }
 
 .special-offer .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+}
+
+.special-offer .item {
+  flex-basis: 50%;
+  padding: 23px 20px;
+  margin-left: 26px;
 }
 
 .special-offer h3 {
+  margin: 0;
   font-size: 35px;
   line-height: 41px;
 }
 
 .special-offer p {
+  margin: 0;
   font-size: 18px;
   line-height: 22px;
 }
 
 .special-offer li:first-of-type {
-  background-image: url("../img/raspberry.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  margin-left: 0;
+  background: url("../img/raspberry.jpg") no-repeat 0 0;
 }
 
 .special-offer li:last-of-type {
-  background-image: url("../img/chocolate.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: url("../img/chocolate.jpg") no-repeat 0 0;
+}
+
+.products {
+  margin-bottom: 40px;
 }
 
 .products .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
+.products .item {
+  width: 267px;
+  margin-right: 26px;
+  display: flex;
+  flex-direction: column;
+}
+
+.products .item:nth-child(4n){
+  margin-right: 0;
+}
+
+.products .box-name {
+  order: 2;
+}
+
+.products .quick-view {
+  margin: 0;
+  order: 2;
+}
+
 .products .name {
+  margin: 0;
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
@@ -205,17 +326,22 @@ a {
 }
 
 .products .name:hover,
-.products .name:focus {
+.products .name:active {
   color: #ffbc9e;
-  text-decoration: none;
+}
+
+.products .image {
+  margin: 0;
 }
 
 .price {
+  margin: 0;
   line-height: 45px;
-  text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
 
-.price b {
+.price b,
+.price .currency{
   font-size: 45px;
   font-weight: 700;
 }
@@ -226,37 +352,55 @@ a {
 }
 
 .features {
+  margin: 0;
+  padding: 20px;
+  margin-bottom: 40px;
+
   color: #323232;
 
-  background-color: #eaddc0;
-  background-image: url("../img/waffle.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
+  background: #eaddc0 url("../img/waffle.jpg") repeat 0 0;
 }
 
 .features .tip {
+  margin: 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
 }
 
 .features .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .features .item {
+  padding-top: 25px;
+  width: 476px;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
 }
 
+.index-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
 .blog-new {
+  flex-basis: 520px;
+  min-height: 180px;
+  margin-right: 26px;
+  padding: 20px;
+
   color: #323232;
 
-  background-color: #ffffff;
-  background-image: url("../img/preview.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #ffffff url("../img/preview.jpg") no-repeat 0 0;
 }
 
 .blog-new h2 {
@@ -273,17 +417,18 @@ a {
 }
 
 .blog-new a:hover,
-.blog-new a:focus{
+.blog-new a:active{
   color: #e84d37;
-  text-decoration: none;
 }
 
 .subscribe {
-  background-color: #f8f7f4;
-  background-image: url("../img/post.svg"); /*Не отображается svg*/
-  background-position: 0 0;
-  background-repeat: repeat;
+  flex-basis: 560px;
+  min-height: 220px;
+  margin-right: 0;
+
+  background: #f8f7f4 url("../img/post.svg") repeat 0 0;
 }
+
 
 .subscribe .content {
   background-color: #f8f7f4;
@@ -297,49 +442,99 @@ a {
 }
 
 .subscribe input {
-  color: #323232; /*как изменить формат текста placeholder?*/
+  color: #323232;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
 
-  border: solid 1px #b2b2b2;
+  border: solid 1px rgba(178, 178, 178, 0.52);
+}
+
+.subscribe input:placeholder-shown {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #999999;
+
+  border: solid 1px rgba(178, 178, 178, 0.52);
+}
+
+.subscribe input:hover {
+  border: solid 2px rgba(154, 154, 154, 0.52);
+}
+
+.subscribe input:focus {
+  border: solid 2px rgba(46, 136, 228, 0.52);
 }
 
 .contacts {
+  width: 242px;
+  height: 255px;
+  padding: 30px 25px;
   color: #323232;
 
-  background-color: #fffefe;
+  position: absolute;
+
+  background-color: #ffffff;
 }
 
 .contacts h3 {
+  margin: 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
 }
 
 .contacts address {
+  margin: 0;
   font-size: 18px;
   font-style: normal;
   line-height: 24px;
 }
 
 .contacts .phone {
+  margin: 0;
   font-size: 18px;
   line-height: 22px;
 }
 
 .contacts .operating-mode {
+  margin: 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
 }
 
+.contacts h2 {
+  margin: 0; /*Временно, пока не скрою его*/
+}
+
+.map img {
+  width: 1200px;
+  height: 430px;
+  margin-left: -27px;
+}
+
+.box-title {
+  display: flex;
+  flex-direction: column;
+}
+
 .container h1 {
+  order: 2;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+
   font-size: 35px;
   line-height: 41px;
 }
 
 .breadcrumbs {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -353,9 +548,8 @@ a {
 }
 
 .breadcrumbs a:hover,
-.breadcrumbs a:focus {
+.breadcrumbs a:active {
   color: #ffbc9e;
-  text-decoration: none;
 }
 
 .breadcrumbs-active {
@@ -364,9 +558,27 @@ a {
   line-height: 16px;
 }
 
+.filters {
+  margin-bottom: 40px;
+}
+
+.filters-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
 .filters fieldset {
   border: none;
 }
+
+.sort,
+.filter-price,
+.fat,
+.additive {
+  margin-right: 15px;
+}
+
 
 .sort label,
 .filter-price label,
@@ -403,6 +615,8 @@ a {
 }
 
 .filters ul {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -411,6 +625,8 @@ a {
 }
 
 .filters-btn {
+  width: 144px;
+  height: 37px;
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
@@ -427,7 +643,7 @@ a {
   background-color: #ffffff;
 }
 
-.filters-btn:focus {
+.filters-btn:active {
   color: #323232;
 
   background-color: #ededed;
@@ -435,6 +651,9 @@ a {
 }
 
 .products .title {
+  margin: 0;
+  order: 1;
+
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
@@ -448,6 +667,11 @@ a {
 }
 
 .pagination-list {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -458,11 +682,15 @@ a {
   line-height: 18px;
 }
 
+.pagination-item:not(:last-child) {
+  margin-right: 20px;
+}
+
 .pagination-item a:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.pagination-list a:focus {
+.pagination-list a:active {
   color: #323232;
 
   background-color: #ffffff;
@@ -476,8 +704,19 @@ a {
   background-color: #ffffff;
 }
 
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 27px;
+}
+
+.social {
+  width: 185px;
+}
 
 .social ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -485,13 +724,13 @@ a {
   color: #ffffff;
 }
 
-.documents h2 {
-  font-size: 13px;
-  line-height: 18px;
-  text-decoration: underline;
+.documents {
+  width: 310px;
 }
 
 .documents .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -503,13 +742,17 @@ a {
   text-decoration: underline;
 }
 
+.documents .heart + a {
+  font-weight: 700;
+}
+
 .documents a:hover,
-.documents a:focus {
+.documents a:active {
   color: #ffbc9e;
-  text-decoration: none;
 }
 
 .copyright {
+  width: 190px;
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
@@ -517,13 +760,12 @@ a {
 
 .copyright a {
   color: #ffffff;
-  text-decoration: underline; /*И опять не отображается svg логотип академии*/
+  text-decoration: underline;
 }
 
 .copyright a:hover,
-.copyright a:focus {
+.copyright a:active {
   color: #ffbc9e;
-  text-decoration: none;
 }
 
 .modal {
@@ -532,24 +774,35 @@ a {
   background-color: #f8f7f4;
 }
 
-.modal input {
-  color: #323232; /*как изменить формат текста placeholder?*/
+.modal input,
+.modal-feedback textarea {
+  color: #323232;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
 
-  border: solid 1px #b2b2b2;
+  border: solid 1px rgba(178, 178, 178, 0.52);
 }
 
-.modal input:hover {
-  border: 2px solid #9a9a9a; /*цвет не похож на тот, что в макете, хотя в настройках цветов фотошопа все в порядке*/
-}
-/*если взять цвет пипеткой, он получается другой, чем если копировать стили в css из фотошопа*/
+.modal input:placeholder-shown,
+.modal-feedback textarea:placeholder-shown {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #999999;
 
-.modal input:focus {
-  border: 2px solid #2e88e4;
+  border: solid 1px rgba(178, 178, 178, 0.52);
 }
 
+.modal input:hover,
+.modal-feedback textarea:hover {
+  border: solid 2px rgba(154, 154, 154, 0.52);
+}
+
+.modal input:focus,
+.modal-feedback textarea:focus {
+  border: solid 2px rgba(46, 136, 228, 0.52);
+}
 
 .modal-login a {
   color:#323232;
@@ -560,9 +813,8 @@ a {
 }
 
 .modal-login a:hover,
-.modal-login a:focus {
+.modal-login a:active {
   color: #e84d37;
-  text-decoration: none;
 }
 
 .modal:not(.modal-feedback) {
@@ -590,5 +842,3 @@ a {
   font-weight: 700;
   line-height: 18px;
 }
-
-/*А еще не могу экспортировать знак рубля в svg*/
