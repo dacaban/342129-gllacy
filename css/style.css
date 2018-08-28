@@ -4,7 +4,7 @@
 }
 
 body {
-  width: 1200px;
+  min-width: 1200px;
   padding: 0;
   margin: 0 auto;
 
@@ -14,9 +14,35 @@ body {
   font-weight: 700;
   color: #ffffff;
 
-  background-color: #849d8f;
+  background-color: #849d8f
+  background-color: #849d8f
 
-  /*border: 1px solid black; !*временно для наглядности*!*/
+}
+
+.site-wrapper {
+  background: #849d8f url("../img/slide-1.png") no-repeat top center;
+
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+.site-wrapper::before,
+.site-wrapper::after {
+  content: "";
+
+  visibility: hidden;
+}
+
+.site-wrapper::before {
+  background-image: url("../img/slide-2.png");
+}
+
+.site-wrapper::after {
+  background-image: url("../img/slide-3.png");
+}
+
+.main-container{
+  width: 1200px;
+  margin: 0 auto;
 }
 
 a {
@@ -263,33 +289,35 @@ input[type="radio"].visually-hidden {
   text-align: right;
 }
 
-.container {
-  padding: 0 27px;
-}
-
 .btn {
+  display: inline-block;
+  padding: 12px 44px;
+
   color: #ffffff;
   font-size: 18px;
+  font-weight: 700;
   line-height: 24px;
+  vertical-align: top;
   text-decoration: none;
   text-align: center;
 
   opacity: 0.99;
-  background-image: linear-gradient(to top, #ca3824, #f26843);
-  box-shadow: 0 2px 2px 0 rgba(85, 8, 0, 0.54);
+  background: #f26843;
+  background-image: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);;
+  box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
   border: none;
+
+  cursor: pointer;
 }
 
 .btn:hover {
-  background-image: linear-gradient(to top, #e74a35, #f26843), linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
-  box-shadow: 0 1px 2px 0 #ac1000;
-  border: none;
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .btn:active {
-  background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
-  box-shadow: inset 0 2px 2px 0 #942718;
-  border: none; /*при нажатии на кнопку типа батон не убирается стандартная синяя рамка*/
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .btn:focus{
@@ -297,46 +325,95 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 0 5px 3px #942718;
 }
 
-.slides .image {
-  width: 1065px;
-  height: 859px;
-  margin: 0 auto;
+.slides {
+  position: relative;
 
-}
+  padding-top: 321px;
 
-.slides h3 {
-  font-size: 60px;
-  line-height: 60px;
   text-align: center;
+  color: #ffffff;
 }
 
-.slides .btn {
-  font-size: 32px;
-  line-height: 44px;
-
-  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+.slide {
+  display: none;
 }
 
-.slides .btn:hover {
-  box-shadow: 0 2px 2px 0 #ac1000;
+#product-1:checked ~ .site-wrapper #slide1,
+#product-2:checked ~ .site-wrapper #slide2,
+#product-3:checked ~ .site-wrapper #slide3 {
+  display: block;
 }
 
-.slide-1 {
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"] {
+  background-color: #ffffff;
+}
+
+#product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
+  background-image: url("../img/slide-1.png");
 }
 
-.slide-2 {
+#product-2:checked ~ .site-wrapper {
   background-color: #8996a6;
+  background-image: url("../img/slide-2.png");
 }
 
-.slide-3 {
+#product-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
+  background-image: url("../img/slide-3.png");
 }
 
-.slides .switches {
+.slides .list {
   margin: 0;
   padding: 0;
+
   list-style: none;
+}
+
+.slides .title {
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 800;
+}
+
+.slide-btn {
+  font-size: 31px;
+  line-height: 41px;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  border-radius: 50px;
+}
+
+.slides .controls {
+  position: absolute;
+  bottom: 63px;
+  left: 0;
+  z-index: 20;
+
+  font-size: 0;
+}
+
+.controls label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.container {
+  padding: 0 27px;
 }
 
 .special-offer {
