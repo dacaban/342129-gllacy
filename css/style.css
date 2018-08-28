@@ -290,7 +290,7 @@ input[type="radio"].visually-hidden {
 
 .btn {
   display: inline-block;
-  padding: 12px 44px;
+  padding: 10px 22px;
 
   color: #ffffff;
   font-size: 18px;
@@ -298,11 +298,11 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   vertical-align: top;
   text-decoration: none;
-  text-align: center;
 
   opacity: 0.99;
   background: #f26843 linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
+  border-radius: 50px;
   border: none;
 
   cursor: pointer;
@@ -382,6 +382,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slide-btn {
+  padding: 12px 44px;
   font-size: 31px;
   line-height: 41px;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
@@ -448,6 +449,10 @@ input[type="radio"].visually-hidden {
   margin-bottom: 45px;
   font-size: 18px;
   line-height: 22px;
+}
+
+.special-offer .btn {
+
 }
 
 .special-offer .item:first-of-type {
