@@ -558,12 +558,13 @@ input[type="radio"].visually-hidden {
 
 .features {
   margin: 0;
-  padding: 20px;
+  padding: 25px; 20px;
   margin-bottom: 40px;
 
   color: #323232;
 
   background: #eaddc0 url("../img/waffle.jpg") repeat 0 0;
+  border-radius: 15px;
 }
 
 .features .tip {
@@ -584,11 +585,41 @@ input[type="radio"].visually-hidden {
 }
 
 .features .item {
+  position: relative;
+
   padding-top: 25px;
+  padding-left: 56px;
   width: 476px;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+}
+
+.features .item::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 49px;
+  height: 49px;
+
+}
+
+.features .item:first-child::before {
+  background: url("../img/icecream.svg") no-repeat 0 0;
+}
+
+.features .item:nth-child(2)::before {
+  background: url("../img/cow.svg") no-repeat 0 0;
+}
+
+.features .item:nth-child(3)::before {
+  background: url("../img/sheet.svg") no-repeat 0 0;
+}
+
+.features .item:last-child::before {
+  background: url("../img/thermometer.svg") no-repeat 0 0;
 }
 
 .index-box {
