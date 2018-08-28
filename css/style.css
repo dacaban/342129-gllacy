@@ -109,11 +109,18 @@ input[type="radio"].visually-hidden {
   text-decoration: underline;
 }
 
-.main-menu a:hover,
-.main-menu a:focus {
+.main-menu a:hover:not(.active),
+.main-menu a:focus:not(.active) {
   color: #333333;
 
   background-color: #f7f6f3;
+}
+
+.main-menu .active {
+  color: #ffffff;
+  text-decoration: none;
+
+  background-color: #d07058;
 }
 
 .main-menu a:active {
