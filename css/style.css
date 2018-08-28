@@ -451,8 +451,8 @@ input[type="radio"].visually-hidden {
   line-height: 22px;
 }
 
-.special-offer .btn {
-
+.special-offer .btn-box {
+  text-align: right;
 }
 
 .special-offer .item:first-of-type {
