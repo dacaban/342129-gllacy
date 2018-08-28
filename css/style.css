@@ -478,10 +478,15 @@ input[type="radio"].visually-hidden {
 }
 
 .products .item {
-  width: 267px;
-  margin-right: 26px;
   display: flex;
   flex-direction: column;
+
+  position: relative;
+
+  width: 267px;
+  margin-right: 26px;
+
+  text-align: center;
 }
 
 .products .item:nth-child(4n){
@@ -514,9 +519,27 @@ input[type="radio"].visually-hidden {
 
 .products .image {
   margin: 0;
+  margin-bottom: 10px;
+}
+
+.products .hit::before {
+  content: "";
+
+  position: absolute;
+  width: 61px;
+  height: 61px;
+
+  background: url("../img/hit.svg") no-repeat 0 0;
+}
+
+.products img {
+  border-radius: 50%;
+  object-fit: contain;
 }
 
 .price {
+  position: absolute;
+  top: 210px;
   margin: 0;
   line-height: 45px;
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
