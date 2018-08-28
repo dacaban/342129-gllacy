@@ -301,8 +301,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
 
   opacity: 0.99;
-  background: #f26843;
-  background-image: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);;
+  background: #f26843 linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
   border: none;
 
@@ -327,7 +326,8 @@ input[type="radio"].visually-hidden {
 .slides {
   position: relative;
 
-  padding-top: 321px;
+  padding-top: 272px;
+  margin-bottom: 40px;
 
   text-align: center;
   color: #ffffff;
@@ -428,28 +428,34 @@ input[type="radio"].visually-hidden {
 
 .special-offer .item {
   flex-basis: 50%;
-  padding: 23px 20px;
+  padding: 20px;
   margin-left: 26px;
+
+  border-radius: 15px;
 }
 
 .special-offer h3 {
   margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
   font-size: 35px;
   line-height: 41px;
 }
 
 .special-offer p {
   margin: 0;
+  padding: 0;
+  margin-bottom: 45px;
   font-size: 18px;
   line-height: 22px;
 }
 
-.special-offer li:first-of-type {
+.special-offer .item:first-of-type {
   margin-left: 0;
   background: url("../img/raspberry.jpg") no-repeat 0 0;
 }
 
-.special-offer li:last-of-type {
+.special-offer .item:last-of-type {
   background: url("../img/chocolate.jpg") no-repeat 0 0;
 }
 
