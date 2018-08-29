@@ -139,6 +139,7 @@ input[type="radio"].visually-hidden {
   color: #333333;
 
   background-color: #f7f6f3;
+  border-radius: 50px;
 }
 
 .main-menu .active {
@@ -146,6 +147,7 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
 
   background-color: #d07058;
+  border-radius: 50px;
 }
 
 .main-menu a:active {
@@ -191,6 +193,7 @@ input[type="radio"].visually-hidden {
 
   background-color: rgba(255, 255, 255, 0.2);
   border: none;
+  border-radius: 50px;
   text-align: right;
 }
 
@@ -201,6 +204,7 @@ input[type="radio"].visually-hidden {
   width: 33px;
   height: 33px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .search:hover path,
@@ -248,6 +252,7 @@ input[type="radio"].visually-hidden {
   color: #323232;
 
   background-color: #f8f7f4;
+  cursor: pointer;
 }
 
 .cart-full::before {
