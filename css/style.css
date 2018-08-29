@@ -558,7 +558,7 @@ input[type="radio"].visually-hidden {
 
 .features {
   margin: 0;
-  padding: 25px; 20px;
+  padding: 25px 20px;
   margin-bottom: 40px;
 
   color: #323232;
@@ -637,15 +637,25 @@ input[type="radio"].visually-hidden {
   color: #323232;
 
   background: #ffffff url("../img/preview.jpg") no-repeat 0 0;
+  border-radius: 15px;
 }
 
 .blog-new h2 {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
 }
 
+.blog-new h3 {
+  margin: 0;
+  margin-top: 7px;
+  margin-right: 230px;
+}
+
 .blog-new a {
+
   color: #323232;
   font-size: 24px;
   line-height: 30px;
