@@ -859,7 +859,12 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 880px;
   margin: 0;
+  margin-top: 15px;
   padding: 0;
 
   list-style: none;
@@ -879,10 +884,38 @@ input[type="radio"].visually-hidden {
   color: #ffbc9e;
 }
 
-.breadcrumbs-active {
+.breadcrumbs li {
+  position: relative;
+  margin-right: 22px;
+}
+
+.breadcrumbs li:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs li::after {
+  content: "»";
+
+  position: absolute;
+  top: 3px;
+  width: 22px;
+  height: 14px;
+
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
+  text-align: center;
+}
+
+.active-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.breadcrumbs-active::after {
+  display: none;
+
 }
 
 .filters {
