@@ -104,6 +104,8 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -282,8 +284,10 @@ input[type="radio"].visually-hidden {
 }
 
 .box-info {
-  margin-top: 20px;
-  flex-grow: 2;
+  position: absolute;
+
+  top: 51px;
+  right: 0;
 }
 
 .maim-navigation .phone {
