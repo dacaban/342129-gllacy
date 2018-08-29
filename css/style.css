@@ -762,6 +762,8 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   border-radius: 15px;
+
+  z-index: 10;
 }
 
 .contacts h3 {
@@ -813,6 +815,22 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   height: 430px;
   margin-left: -27px;
+}
+
+.map {
+  position: relative;
+}
+
+.map::before {
+  content: "";
+
+  position: absolute;
+  width: 80px;
+  height: 140px;
+  left: 239px;
+  bottom: 155px;
+
+  background: url("../img/marker.svg") no-repeat 0 0;
 }
 
 .box-title {
@@ -1008,20 +1026,55 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   padding: 0 27px;
+  margin-top: 12px;
 }
 
 .social {
   width: 185px;
+  margin-top: 18px;
 }
 
 .social ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.social a {
+.social-btn {
   color: #ffffff;
+}
+
+.social-btn svg {
+  width: 32px;
+  height: 32px;
+
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.social-btn path {
+  opacity: 0.8;
+}
+
+.social-btn:hover svg,
+.social-btn:focus svg {
+  border: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.social-btn:hover path,
+.social-btn:focus path {
+  opacity: 1;
+}
+
+.social-btn:active svg {
+  border: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.social-btn:active path {
+  opacity: 0.7;
 }
 
 .documents {
