@@ -1078,13 +1078,22 @@ input[type="radio"].visually-hidden {
 }
 
 .documents {
-  width: 310px;
+  margin-top: 18px;
+  width: 326px;
 }
 
 .documents .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
+
   list-style: none;
+}
+
+.documents .doc-column:first-child {
+  padding-left: 22px;
 }
 
 .documents a {
@@ -1095,8 +1104,21 @@ input[type="radio"].visually-hidden {
   text-decoration: underline;
 }
 
-.documents .heart + a {
+.documents .heart {
+  position: relative;
   font-weight: 700;
+}
+
+.documents .heart::before {
+  content: "";
+
+  position: absolute;
+  width: 15px;
+  height: 13px;
+  left: -22px;
+  top: 2px;
+
+  background: url("../img/heart.svg") no-repeat 0 0;
 }
 
 .documents a:hover,
