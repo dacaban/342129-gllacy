@@ -1016,7 +1016,11 @@ input[type="radio"].visually-hidden {
   border-radius: 50px;
 }
 
-.sort select:hover {
+.sort select:hover,
+.sort select:focus,
+.sort select:active {
+  outline: none;
+  background-color: #ffffff;
   color: #323232;
 }
 
