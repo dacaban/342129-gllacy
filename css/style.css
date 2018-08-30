@@ -473,10 +473,6 @@ input[type="radio"].visually-hidden {
   background: url("../img/chocolate.jpg") no-repeat 0 0;
 }
 
-/*.products {*/
-  /*margin-bottom: 40px;*/
-/*}*/
-
 .products .list {
   display: flex;
   flex-wrap: wrap;
@@ -1073,6 +1069,15 @@ input[type="radio"].visually-hidden {
   bottom: -3px;
 
   opacity: 0.8;
+}
+
+.filters label:hover::before {
+  opacity: 1;
+}
+
+.filter-input:disabled::before,
+.filter-input:disabled + label {
+  opacity: 0.4;
 }
 
 .filter-radio + label::before {
