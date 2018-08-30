@@ -473,9 +473,9 @@ input[type="radio"].visually-hidden {
   background: url("../img/chocolate.jpg") no-repeat 0 0;
 }
 
-.products {
-  margin-bottom: 40px;
-}
+/*.products {*/
+  /*margin-bottom: 40px;*/
+/*}*/
 
 .products .list {
   display: flex;
@@ -494,8 +494,11 @@ input[type="radio"].visually-hidden {
 
   width: 267px;
   margin-right: 26px;
+  margin-bottom: 40px;
 
   text-align: center;
+
+  border-radius: 5px;
 }
 
 .products .item:nth-child(4n){
@@ -508,11 +511,48 @@ input[type="radio"].visually-hidden {
 
 .products .quick-view {
   margin: 0;
-  order: 2;
+  display: none;
+}
+
+.products .item:hover>.quick-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  left: -13px;
+  top: -6px;
+  box-sizing: border-box;
+  width: 293px;
+  height: 405px;
+  margin: 0;
+  padding: 6px 13px 22px;
+  z-index: -1;
+  background-color: rgba(255,255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.products .item:hover {
+  position: relative;
+  z-index: 1;
 }
 
 .products .name {
   margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.products .title {
+  margin: 0;
+  order: 1;
+
+  width: 258px;
+
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
@@ -1082,22 +1122,6 @@ input[type="radio"].visually-hidden {
 
   background-color: #ededed;
   box-shadow: inset 0 2px 1px 0 #696969;
-}
-
-.products .title {
-  margin: 0;
-  order: 1;
-
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 22px;
-  text-align: center;
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-.products .item:hover {
-  background-color: rgba(255,255, 255, 0.2);
 }
 
 .pagination-list {
