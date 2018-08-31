@@ -1034,7 +1034,6 @@ input[type="radio"].visually-hidden {
 
 }
 
-
 .sort label,
 .filter-price span,
 .filters legend {
@@ -1046,27 +1045,37 @@ input[type="radio"].visually-hidden {
 }
 
 .sort {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
 
 .sort select {
-  padding: 7px 10px;
-  padding-right: 17px;
+  padding: 10px 33px 9px 16px;
+
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
   color: #ffffff;
 
+  background: url("../img/down-dir-white.svg") no-repeat 92% 50%;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
+  border: none;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .sort select:hover,
 .sort select:focus,
 .sort select:active {
   outline: none;
+
+  background: url("../img/down-dir-black.svg") no-repeat 93% 58%;
   background-color: #ffffff;
+
   color: #323232;
 }
 
