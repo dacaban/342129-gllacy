@@ -1013,7 +1013,7 @@ input[type="radio"].visually-hidden {
 
 
 .sort label,
-.filter-price label,
+.filter-price span,
 .filters legend {
   font-size: 14px;
   font-weight: 500;
@@ -1073,10 +1073,8 @@ input[type="radio"].visually-hidden {
   border: 2px solid rgba(255, 255, 255, 0.5)
 }
 
-.filter-price .range::before,
-.filter-price .range::after {
-  content: "";
-
+.filter-price .min-price,
+.filter-price .max-price {
   position: absolute;
   top: -10px;
 
@@ -1088,11 +1086,11 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
-.filter-price .range::before {
+.filter-price .min-price {
   left: 13px;
 }
 
-.filter-price .range::after {
+.filter-price .max-price {
   right: 45px;
 }
 
