@@ -244,9 +244,13 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.search:hover path,
-.search:focus path{
+.search-container:hover path,
+.search-container:focus path{
   fill: #000000;
+}
+
+.login-container {
+  display: flex;
 }
 
 .login-link {
@@ -260,11 +264,28 @@ input[type="radio"].visually-hidden {
   margin-right: 7px;
 }
 
-.login-link:hover path,
-.login-link:focus path,
-.login-link:hover polygon,
-.login-link:focus polygon {
+.login-container:hover path,
+.login-container:focus path,
+.login-container:hover polygon,
+.login-container:focus polygon {
   fill: #000000;
+}
+
+.search-container:hover .search,
+.login-container:hover .login-link,
+.search-container:focus .search,
+.login-container:focus .login-link {
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.search-container:hover .search-box {
+  display: block;
+}
+
+.login-container:hover .login-box {
+  display: block;
 }
 
 .cart {
@@ -300,15 +321,6 @@ input[type="radio"].visually-hidden {
   width: 21px;
   height: 20px;
   background: url("../img/cart-full.svg") no-repeat 0 0;
-}
-
-.search:hover,
-.login-link:hover,
-.search:focus,
-.login-link:focus {
-  color: #323232;
-
-  background-color: #f8f7f4;
 }
 
 .maim-navigation .operating-mode {
@@ -1453,14 +1465,18 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 0 0 2px rgba(46, 136, 228, 0.52);
 }
 
-.modal-search {
+.search-box {
   display: none; /*Временно*/
   position: absolute;
-  padding: 20px 15px;
-  left: -300px;
-  top: 38px;
-
+  left: -295px;
+  top: 28px;
   z-index: 1;
+}
+
+.modal-search {
+  margin-top: 10px;
+  margin-right: 5px;
+  padding: 20px 15px;
 
   border-radius: 5px;
 }
@@ -1470,13 +1486,17 @@ input[type="radio"].visually-hidden {
   width: 311px;
 }
 
-.modal-login {
+.login-box {
   display: none; /*временно*/
   position: absolute;
-  padding: 20px 17px 22px 19px;
-  top: 38px;
+  top: 28px;
   left: -130px;
   z-index: 1;
+}
+
+.modal-login {
+  margin-top: 10px;
+  padding: 20px 17px 22px 19px;
 
   border-radius: 5px;
 }
@@ -1503,7 +1523,7 @@ input[type="radio"].visually-hidden {
   width: 211px;
 }
 
-.modal-login .login-box {
+.modal-login .login-btn-container {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -1628,5 +1648,5 @@ input[type="radio"].visually-hidden {
   height: 100%;
   z-index: 2;
 
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
 }
