@@ -1,5 +1,4 @@
-.modal,
-.submenu{
+.modal {
   display: none; /*Временно для верстки сетки, чтоб не мешалось*/
 }
 
@@ -85,6 +84,9 @@ input[type="radio"].visually-hidden {
 
 .main-menu,
 .submenu {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -92,8 +94,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   width: 382px;
-  margin: 0;
-  padding: 0;
   margin-left: 10px;
   margin-top: 25px;
   margin-bottom: auto;
@@ -117,14 +117,23 @@ input[type="radio"].visually-hidden {
   margin-bottom: auto;
 }
 
+.main-menu-item {
+  position: relative;
+}
+
 .submenu {
+  position: absolute;
+  left: -5px;
+  top: 37px;
+  min-width: 121px;
+  padding: 9px 11px;
   background-color: #f8f7f4;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
 }
 
 .main-menu-item > a {
   display: block;
-  vertical-align: middle;
   padding: 7px 14px;
 }
 
@@ -136,15 +145,15 @@ input[type="radio"].visually-hidden {
   text-decoration: underline;
 }
 
-.main-menu a:hover:not(.active),
-.main-menu a:focus:not(.active) {
+.main-menu-item > a:hover:not(.active),
+.main-menu-item > a:focus:not(.active) {
   color: #333333;
 
   background-color: #f7f6f3;
   border-radius: 50px;
 }
 
-.main-menu .active {
+.main-menu-item > .active {
   color: #ffffff;
   text-decoration: none;
 
@@ -152,7 +161,7 @@ input[type="radio"].visually-hidden {
   border-radius: 50px;
 }
 
-.main-menu a:active {
+.main-menu-item > a:active {
   color: #333333;
 
   background-color: #ededed;
@@ -160,6 +169,8 @@ input[type="radio"].visually-hidden {
  }
 
 .submenu a {
+  display: block;
+  padding: 6px 9px;
   color: #323232;
   font-size: 14px;
   line-height: 16px;
@@ -176,12 +187,25 @@ input[type="radio"].visually-hidden {
   color: #323232;
 
   background-color: #f6b5a5;
-  box-shadow: none
-;
 }
 
 .submenu a:not(.new) {
   font-weight: 400;
+}
+
+.submenu .new {
+  display: flex;
+  flex-direction: column;
+}
+
+.submenu .new::after {
+  content: "";
+
+  height: 1px;
+  margin-top: 14px;
+  padding: 0;
+
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .search,
