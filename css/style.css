@@ -82,6 +82,7 @@ input[type="radio"].visually-hidden {
 .submenu {
   margin: 0;
   padding: 0;
+  z-index: 1;
 
   list-style: none;
 }
@@ -117,12 +118,17 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.submenu {
+.submenu-box {
   position: absolute;
   left: -5px;
-  top: 37px;
-  min-width: 121px;
-  padding: 9px 11px;
+  top: 30px;
+  /*box-shadow: 0 0 0 2px red;*/
+}
+
+.submenu {
+  min-width: 143px;
+  padding: 9px 0;
+  margin-top: 7px;
   background-color: #f8f7f4;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 5px;
@@ -167,7 +173,7 @@ input[type="radio"].visually-hidden {
 .submenu a {
   display: block;
   box-sizing: border-box;
-  padding: 6px 9px;
+  padding: 6px 20px;
   color: #323232;
   font-size: 14px;
   line-height: 16px;
@@ -198,10 +204,10 @@ input[type="radio"].visually-hidden {
 .submenu .new::after {
   content: "";
 
+  box-sizing: border-box;
   height: 1px;
-  width: 100%;
-  margin: 8px 0 5px;
-  padding: 0;
+  width: 87%;
+  margin: 8px 9px 5px;
 
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -1447,7 +1453,7 @@ input[type="radio"].visually-hidden {
   left: -300px;
   top: 38px;
 
-  z-index: 5;
+  z-index: 1;
 
   border-radius: 5px;
 }
@@ -1463,7 +1469,7 @@ input[type="radio"].visually-hidden {
   padding: 20px 17px 22px 19px;
   top: 38px;
   left: -130px;
-  z-index: 10;
+  z-index: 1;
 
   border-radius: 5px;
 }
