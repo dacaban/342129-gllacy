@@ -54,27 +54,31 @@
           </a>
 
           <section class="modal modal-login">
-            <h2>Войти</h2>
+            <h2 class="visually-hidden">Войти</h2>
             <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
               <p>
-                <label class="visually-hidden">
+                <label for="email" class="visually-hidden">
                   Электронная почта
-                  <input type="text" name="email" placeholder="Электронная почта">
                 </label>
+                <input id="email" type="text" name="email" placeholder="Электронная почта">
               </p>
               <p>
-                <label class="visually-hidden">
+                <label for="password" class="visually-hidden">
                   Пароль
-                  <input type="password" name="password" placeholder="Пароль">
                 </label>
+                <input id="password" type="password" name="password" placeholder="Пароль">
               </p>
-              <p>
-                <a title="Восстановить пароль" href="#">Забыли пароль?</a>
-              </p>
-              <p>
-                <a title="Зарегистрироваться" href="#">Новая регистрация</a>
-              </p>
-              <button class="btn" type="submit">Войти</button>
+              <div class="login-box">
+                <div class="user-links">
+                  <p>
+                    <a title="Восстановить пароль" href="#">Забыли пароль?</a>
+                  </p>
+                  <p>
+                    <a title="Зарегистрироваться" href="#">Новая регистрация</a>
+                  </p>
+                </div>
+                <button class="btn" type="submit">Войти</button>
+              </div>
             </form>
           </section>
 
