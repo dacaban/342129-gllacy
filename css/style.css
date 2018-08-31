@@ -1509,6 +1509,16 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
+.modal-feedback {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 478px;
+  margin-left: -239px;
+}
+
 .modal-feedback h2{
   font-size: 24px;
   font-weight: 500;

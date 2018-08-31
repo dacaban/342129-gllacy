@@ -292,22 +292,22 @@
             <h2>Мы обязательно вам ответим!</h2>
             <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
               <p>
-                <label class="visually-hidden">
+                <label for="feedback-name" class="visually-hidden">
                   Имя
-                  <input type="text" name="fullname" placeholder="Как вас зовут?">
                 </label>
+                  <input id="feedback-name" type="text" name="fullname" placeholder="Как вас зовут?">
               </p>
               <p>
-                <label class="visually-hidden">
+                <label for="feedback-email" class="visually-hidden">
                   Электронная почта
-                  <input type="text" name="email" placeholder="Ваша почта для ответа?">
                 </label>
+                  <input id="feedback-email" type="text" name="email" placeholder="Ваша почта для ответа?">
               </p>
               <p>
-                <label class="visually-hidden">
+                <label for="feedback-message" class="visually-hidden">
                   Текст обращения
-                  <textarea name="message" placeholder="Напишите что-нибудь..."></textarea>
                 </label>
+                  <textarea id="feedback-message" name="message" placeholder="Напишите что-нибудь..."></textarea>
               </p>
               <button type="submit" class="btn">Отправить</button>
               <button type="button" class="close">Закрыть</button>
