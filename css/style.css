@@ -123,10 +123,9 @@ input[type="radio"].visually-hidden {
   position: absolute;
   left: -5px;
   top: 20px;
-  box-shadow: 0 0 0 2px red;
 }
 
-.main-menu-item a:hover + .submenu-box {
+.main-menu-item:hover .submenu-box {
   display: block;
 }
 
@@ -152,23 +151,26 @@ input[type="radio"].visually-hidden {
   text-decoration: underline;
 }
 
-.main-menu-item > a:hover:not(.active),
-.main-menu-item > a:focus:not(.active) {
+.main-menu-item:hover:not(.active)>a,
+.main-menu-item:not(.active)>a:focus {
   color: #333333;
 
   background-color: #f7f6f3;
   border-radius: 50px;
+  text-decoration: none;
 }
 
-.main-menu-item > .active {
-  color: #ffffff;
-  text-decoration: none;
-
+.main-menu .active {
   background-color: #d07058;
   border-radius: 50px;
 }
 
-.main-menu-item > a:active {
+.main-menu .active-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-menu-item:active > a {
   color: #333333;
 
   background-color: #ededed;
@@ -216,8 +218,6 @@ input[type="radio"].visually-hidden {
 
   background-color: rgba(0, 0, 0, 0.2);
 }
-
-
 
 .search,
 .login-link,
@@ -1528,14 +1528,27 @@ input[type="radio"].visually-hidden {
   top: 50%;
   left: 50%;
 
+  box-sizing: border-box;
   width: 478px;
+  padding: 20px 25px 27px;
   margin-left: -239px;
+
+  border-radius: 15px;
 }
 
 .modal-feedback h2{
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
+}
+
+.modal-feedback input {
+  width: 267px;
+}
+
+.modal-feedback textarea {
+  box-sizing: border-box;
+  width: 428px;
 }
 
 .modal-fullcart {
