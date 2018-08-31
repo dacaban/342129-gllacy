@@ -119,16 +119,21 @@ input[type="radio"].visually-hidden {
 }
 
 .submenu-box {
+  display: none;
   position: absolute;
   left: -5px;
-  top: 30px;
-  /*box-shadow: 0 0 0 2px red;*/
+  top: 20px;
+  box-shadow: 0 0 0 2px red;
+}
+
+.main-menu-item a:hover + .submenu-box {
+  display: block;
 }
 
 .submenu {
   min-width: 143px;
   padding: 9px 0;
-  margin-top: 7px;
+  margin-top: 17px;
   background-color: #f8f7f4;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 5px;
@@ -211,6 +216,8 @@ input[type="radio"].visually-hidden {
 
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+
 
 .search,
 .login-link,
