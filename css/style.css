@@ -1412,6 +1412,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
+  margin-bottom: 20px;
 
   border: solid 1px rgba(178, 178, 178, 0.52);
 }
@@ -1419,7 +1420,6 @@ input[type="radio"].visually-hidden {
 .modal input:placeholder-shown,
 .modal-feedback textarea:placeholder-shown {
   padding: 11px 15px 10px;
-  margin-bottom: 20px;
 
   font-size: 16px;
   font-weight: 400;
@@ -1440,7 +1440,25 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 0 0 2px rgba(46, 136, 228, 0.52);
 }
 
+.modal-search {
+  display: none; /*Временно*/
+  position: absolute;
+  padding: 20px 15px;
+  left: -300px;
+  top: 38px;
+
+  z-index: 5;
+
+  border-radius: 5px;
+}
+
+.modal-search input {
+  margin-bottom: 0;
+  width: 311px;
+}
+
 .modal-login {
+  display: none; /*временно*/
   position: absolute;
   padding: 20px 17px 22px 19px;
   top: 38px;
