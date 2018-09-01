@@ -554,10 +554,6 @@ input[type="radio"].visually-hidden {
   margin-right: 0;
 }
 
-.products .box-name {
-  order: 2;
-}
-
 .products .quick-view {
   margin: 0;
   display: none;
@@ -586,16 +582,6 @@ input[type="radio"].visually-hidden {
   z-index: 1;
 }
 
-.products .name {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 22px;
-  text-align: center;
-  color: #ffffff;
-  text-decoration: underline;
-}
-
 .products .title {
   margin: 0;
   order: 1;
@@ -608,11 +594,6 @@ input[type="radio"].visually-hidden {
   text-align: center;
   color: #ffffff;
   text-decoration: underline;
-}
-
-.products .name:hover,
-.products .name:active {
-  color: #ffbc9e;
 }
 
 .products .image {
@@ -1048,6 +1029,14 @@ input[type="radio"].visually-hidden {
   position: relative;
   display: flex;
   flex-direction: column;
+}
+
+.sort::before {
+  content: "";
+
+  visibility: hidden;
+
+  background: url("../img/down-dir-black.svg");
 }
 
 .sort select {
@@ -1632,7 +1621,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-fullcart {
-  /*display: none; !*временно*!*/
+  display: none; /*временно*/
   position: absolute;
   z-index: 1;
   width: 540px;
