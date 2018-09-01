@@ -25,13 +25,16 @@
         <div class="user-navigation">
 
           <div class="search-container">
+
             <button type="button" class="search">
               <span class="visually-hidden">Поиск</span>
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
                 <path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"></path>
               </svg>
             </button>
+
             <div class="search-box">
+
               <div class="modal modal-search">
                 <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
                   <label for="search" class="visually-hidden">
@@ -40,7 +43,9 @@
                   <input id="search" type="search" name="search" value="" placeholder="Что ищем?">
                 </form>
               </div>
+
             </div>
+
           </div>
 
           <div class="login-container">
@@ -91,44 +96,49 @@
 
           </div>
 
-          <a href="#" title="Корзина" class="cart cart-full">2 товара</a>
+          <div class="cart-container">
 
-          <section class="modal modal-fullcart">
-            <table>
-              <tr class="visually-hidden">
-                <th>Убрать</th>
-                <th>Картинка</th>
-                <th>Название</th>
-                <th>Количество</th>
-                <th>&#215;</th>
-                <th>Цена за кг</th>
-                <th>Стоимость</th>
-              </tr>
-              <tr>
-                <td class="delete"><button class="btn-del" type="button">Убрать</button></td>
-                <td class="image"><img src="img/cart-icecream-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-                <td class="name">Пломбир с апельсиновым джемом</td>
-                <td class="amount">1,5 кг</td>
-                <td class="multiply">&#215;</td>
-                <td class="price">200 руб.</td>
-                <td class="sum">300 руб.</td>
-              </tr>
-              <tr>
-                <td class="delete"><button class="btn-del" type="button">Убрать</button></td>
-                <td class="image"><img src="img/cart-icecream-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                <td class="name">Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td class="amount">1,5 кг</td>
-                <td class="multiply">&#215;</td>
-                <td class="price">300 руб.</td>
-                <td class="sum">450 руб.</td>
-              </tr>
-              <tr>
-                <td colspan="6" class="total">Итого:</td>
-                <td class="total">750 руб.</td>
-              </tr>
-            </table>
-            <a title="Оформить" class="btn" href="#">Оформить заказ</a>
-          </section>
+            <a href="#" title="Корзина" class="cart cart-full">2 товара</a>
+
+            <div class="cart-box">
+
+              <div class="modal modal-fullcart">
+                <table>
+                  <tr class="visually-hidden">
+                    <th>Убрать</th>
+                    <th>Картинка</th>
+                    <th>Название</th>
+                    <th>Количество</th>
+                    <th>&#215;</th>
+                    <th>Цена за кг</th>
+                    <th>Стоимость</th>
+                  </tr>
+                  <tr>
+                    <td class="delete"><button class="btn-del" type="button">Убрать</button></td>
+                    <td class="image"><img src="img/cart-icecream-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+                    <td class="name">Пломбир с апельсиновым джемом</td>
+                    <td class="amount-and-price"><span class="amount">1,5 кг</span> &#215; <span class="price">200 руб.</span></td>
+                    <td class="sum">300 руб.</td>
+                  </tr>
+                  <tr>
+                    <td class="delete"><button class="btn-del" type="button">Убрать</button></td>
+                    <td class="image"><img src="img/cart-icecream-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                    <td class="name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td class="amount-and-price"><span class="amount">1,5 кг</span> &#215; <span class="price">300 руб.</span></td>
+                    <td class="sum">450 руб.</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" class="total total-right">Итого:</td>
+                    <td class="total">750 руб.</td>
+                  </tr>
+                </table>
+                <div class="btn-box">
+                  <a title="Оформить" class="btn" href="#">Оформить заказ</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
 
           <div class="box-info">
             <p class="operating-mode">С 10 до 20, ежедневно</p>
