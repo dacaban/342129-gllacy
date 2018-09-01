@@ -635,7 +635,7 @@ input[type="radio"].visually-hidden {
   object-fit: contain;
 }
 
-.price {
+.products .price {
   position: absolute;
   top: 210px;
   margin: 0;
@@ -1475,7 +1475,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search-box {
-  display: none; /*Временно*/
+  display: none;
   position: absolute;
   left: -295px;
   top: 28px;
@@ -1496,7 +1496,7 @@ input[type="radio"].visually-hidden {
 }
 
 .login-box {
-  display: none; /*временно*/
+  display: none;
   position: absolute;
   top: 28px;
   left: -130px;
@@ -1632,14 +1632,102 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-fullcart {
-  display: none; /*временно*/
+  /*display: none; !*временно*!*/
+  position: absolute;
+  z-index: 1;
+  width: 540px;
+  padding: 20px 15px;
+
   font-size: 13px;
   font-weight: 400;
   line-height: 16px;
+
+  border-radius: 5px;
 }
 
-.cart-price {
+.modal-fullcart table {
+  border-collapse: collapse;
+}
+
+.modal-fullcart td {
+  margin: 0;
+  padding: 0;
+}
+
+.modal-fullcart .btn-del {
+  position: relative;
+  width: 11px;
+  height: 11px;
+  padding: 0;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.btn-del::before,
+.btn-del::after {
+  content: "";
+
+  position: absolute;
+  left: -1px;
+  top: 5px;
+  width: 14px;
+  height: 1px;
+
+  background-color: #231F20;
+}
+
+.btn-del::before {
+  transform: rotate(45deg);
+}
+
+.btn-del::after {
+  transform: rotate(-45deg);
+}
+
+.modal-fullcart .delete {
+  padding-right: 13px;
+  width: 11px;
+}
+
+.modal-fullcart .image {
+  width: 33px;
+  padding-right: 14px;
+}
+
+.modal-fullcart img {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+}
+
+.modal-fullcart .name {
+  width: 216px;
+  padding-right: 26px;
+}
+
+.modal-fullcart .amount {
+  width: 33px;
+}
+
+.modal-fullcart .multiply {
+  width: 7px;
+  padding: 0 3px;
+}
+
+.modal-fullcart .price {
+  width: 48px;
+  padding-right: 24px;
   color: #999999;
+}
+
+.modal-fullcart .sum {
+  width: 49px;
+  padding-right: 5px;
 }
 
 .modal-fullcart .total {
