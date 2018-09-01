@@ -1157,6 +1157,7 @@ input[type="radio"].visually-hidden {
   bottom: -3px;
 
   opacity: 0.8;
+
 }
 
 .fat label:hover::before,
