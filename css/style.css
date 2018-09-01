@@ -1632,7 +1632,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-fullcart {
-  display: none; /*временно*/
+  /*display: none; !*временно*!*/
   position: absolute;
   z-index: 1;
   width: 540px;
