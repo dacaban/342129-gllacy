@@ -539,11 +539,12 @@ input[type="radio"].visually-hidden {
 
 .special-offer .item:first-of-type {
   margin-left: 0;
-  background: url("../img/raspberry.jpg") no-repeat 0 0;
+
+  background: #911330 url("../img/raspberry.jpg") no-repeat 0 0;
 }
 
 .special-offer .item:last-of-type {
-  background: url("../img/chocolate.jpg") no-repeat 0 0;
+  background: #432a20 url("../img/chocolate.jpg") no-repeat 0 0;
 }
 
 .products {
