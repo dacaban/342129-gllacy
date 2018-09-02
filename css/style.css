@@ -1047,7 +1047,7 @@ input[type="radio"].visually-hidden {
 
   visibility: hidden;
 
-  background: url("../img/down-dir-black.svg");
+  background: url("../img/down-dir-black.png");
 }
 
 .sort select {
@@ -1058,7 +1058,7 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   color: #ffffff;
 
-  background: rgba(255, 255, 255, 0.2) url("../img/down-dir-white.svg") no-repeat 92% 50%;
+  background: rgba(255, 255, 255, 0.2) url("../img/down-dir-white.png") no-repeat right center;
   border-radius: 50px;
   border: none;
 
@@ -1072,7 +1072,7 @@ input[type="radio"].visually-hidden {
 .sort select:active {
   outline: none;
 
-  background: #ffffff url("../img/down-dir-black.svg") no-repeat 93% 58%;
+  background: #ffffff url("../img/down-dir-black.png") no-repeat right center;
 
   color: #323232;
 }
