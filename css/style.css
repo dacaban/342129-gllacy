@@ -459,7 +459,7 @@ input[type="radio"].visually-hidden {
 .slides .controls {
   position: absolute;
   bottom: 63px;
-  left: 0;
+  left: 27px;
   z-index: 1;
 
   font-size: 0;
@@ -477,6 +477,11 @@ input[type="radio"].visually-hidden {
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.controls label:hover,
+.controls label:focus{
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .container {
