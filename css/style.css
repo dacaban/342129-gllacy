@@ -1307,7 +1307,8 @@ input[type="radio"].visually-hidden {
 }
 
 
-.pagination-item a:hover {
+.pagination-item a:hover,
+.pagination-item a:focus {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
