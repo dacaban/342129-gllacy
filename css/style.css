@@ -1264,24 +1264,34 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-list {
-  position: relative;
   display: flex;
   justify-content: flex-end;
   max-width: 250px;
   margin: 40px 0 30px;
-  padding: 0 20px;
 
   list-style: none;
 }
 
-.pagination-list::before,
-.pagination-list::after {
+.pagination-btn {
+  position: relative;
+  width: 20px;
+  height: 12px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.pagination-btn::before {
   content: "";
 
   position: absolute;
   width: 10px;
   height: 10px;
-  top: 8px;
+  top: 0;
 
   background-color: transparent;
 
@@ -1289,16 +1299,18 @@ input[type="radio"].visually-hidden {
 
 }
 
-.pagination-list::before{
+.pagination-back::before{
   left: 0;
   box-shadow: -1px 1px 0 0 #ffffff;
-  opacity: 0.2;
 }
 
-.pagination-list::after{
+.pagination-next::before{
   right: 0;
   box-shadow: 1px -1px 0 0 #ffffff;
-  cursor: pointer;
+}
+
+.pagination-btn:disabled::before {
+  opacity: 0.2;
 }
 
 .pagination-list a {
