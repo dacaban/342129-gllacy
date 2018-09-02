@@ -145,6 +145,8 @@ input[type="radio"].visually-hidden {
 .main-menu .active {
   background-color: #d07058;
   border-radius: 50px;
+
+  cursor: pointer;
 }
 
 .main-menu .active-link {
@@ -169,14 +171,22 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
 }
 
-.submenu a:hover,
-.submenu a:focus {
+.submenu .submenu-active {
+  color: #ffffff;
+
+  background-color: #d07058;
+
+  cursor: default;
+}
+
+.submenu a:hover:not(.submenu-active),
+.submenu a:focus:not(.submenu-active) {
   color: #323232;
 
   background-color: #fbded7;
 }
 
-.submenu a:active {
+.submenu a:active:not(.submenu-active) {
   color: #323232;
 
   background-color: #f6b5a5;
