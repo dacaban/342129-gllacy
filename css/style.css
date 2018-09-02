@@ -1141,6 +1141,8 @@ input[type="radio"].visually-hidden {
   background-color: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
+
+  cursor: pointer;
 }
 
 .filter-price .min-price {
@@ -1149,6 +1151,13 @@ input[type="radio"].visually-hidden {
 
 .filter-price .max-price {
   right: 45px;
+}
+
+.filter-price .min-price:hover,
+.filter-price .min-price:focus,
+.filter-price .max-price:hover,
+.filter-price .max-price:focus {
+  border: 9px solid #ffffff;
 }
 
 .filters ul {
