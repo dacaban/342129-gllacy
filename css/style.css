@@ -397,7 +397,7 @@ input[type="radio"].visually-hidden {
 .btn:focus{
   outline: none;
   box-shadow:
-    0 0 5px 6px #f6dd3c;
+    0 0 5px 6px #ffbc9e;
 }
 
 .slides {
