@@ -1206,8 +1206,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filters-btn {
-  width: 144px;
-  height: 37px;
+  padding: 8px 28px 7px;
   margin-top: 4px;
 
   color: #ffffff;
