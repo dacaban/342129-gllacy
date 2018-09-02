@@ -1189,8 +1189,7 @@ input[type="radio"].visually-hidden {
   padding-right: 0;
 }
 
-.fat label::before,
-.additive label::before {
+.filters .indicator {
   content: "";
 
   position: absolute;
@@ -1200,38 +1199,36 @@ input[type="radio"].visually-hidden {
   bottom: -3px;
 
   opacity: 0.8;
-
 }
 
-.fat label:hover::before,
-.additive label:hover::before {
+.filters .indicator:not(.disabled):hover,
+.filter-input:focus + .indicator {
   opacity: 1;
 }
 
-.filter-input:disabled::before,
-.filter-input:disabled + label {
+.filter-input:disabled ~ span {
   opacity: 0.4;
 
   cursor: default;
 }
 
-.filter-radio + label::before {
-  background: url("../img/radio-off.svg") no-repeat 0 0;
+.filters .radio-indicator {
+  background: url("../img/radio-off.svg") no-repeat 1px 1px;
   background-size: 22px auto;
 }
 
-.filter-radio:checked + label::before {
-  background: url("../img/radio-on.svg") no-repeat 0 0;
+.filter-radio:checked + .radio-indicator {
+  background: url("../img/radio-on.svg") no-repeat 1px 1px;
   background-size: 22px auto;
 }
 
-.filter-checkbox + label::before {
-  background: url("../img/checkbox-off.svg") no-repeat 0 0;
+.filters .checkbox-indicator {
+  background: url("../img/checkbox-off.svg") no-repeat 2px 2px;
   background-size: auto 20px;
 }
 
-.filter-checkbox:checked + label::before {
-  background: url("../img/checkbox-on.svg") no-repeat 0 0;
+.filter-checkbox:checked + .checkbox-indicator {
+  background: url("../img/checkbox-on.svg") no-repeat 2px 2px;
   background-size: auto 20px;
 }
 
