@@ -979,7 +979,7 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs li::after {
-  content: "»";
+  content: "\bb";
 
   position: absolute;
   top: 3px;
