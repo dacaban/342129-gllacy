@@ -224,10 +224,7 @@ input[type="radio"].visually-hidden {
   justify-content: flex-end;
 
   max-width: 280px;
-  margin-right: 27px;
-  margin-top: 25px;
-  margin-left: auto;
-  margin-bottom: auto;
+  margin: 25px 27px auto auto;
 }
 
 .search,
@@ -311,8 +308,7 @@ input[type="radio"].visually-hidden {
 .cart {
   position: relative;
   box-sizing: border-box;
-  padding: 8px 17px;
-  padding-left: 45px;
+  padding: 8px 17px 8px 45px;
   cursor: default;
 }
 
@@ -427,18 +423,15 @@ input[type="radio"].visually-hidden {
 }
 
 #product-1:checked ~ .site-wrapper {
-  background-color: #849d8f;
-  background-image: url("../img/slide-1.png");
+  background: #849d8f url("../img/slide-1.png");
 }
 
 #product-2:checked ~ .site-wrapper {
-  background-color: #8996a6;
-  background-image: url("../img/slide-2.png");
+  background: #8996a6 url("../img/slide-2.png");
 }
 
 #product-3:checked ~ .site-wrapper {
-  background-color: #9d8b84;
-  background-image: url("../img/slide-3.png");
+  background: #9d8b84 url("../img/slide-3.png");
 }
 
 .slides .list {
@@ -450,8 +443,7 @@ input[type="radio"].visually-hidden {
 
 .slides .title {
   width: 700px;
-  margin: 0 auto;
-  margin-bottom: 27px;
+  margin: 0 auto 27px;
 
   font-size: 60px;
   line-height: 60px;
@@ -518,17 +510,15 @@ input[type="radio"].visually-hidden {
 }
 
 .special-offer h3 {
-  margin: 0;
   padding: 0;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
   font-size: 35px;
   line-height: 41px;
 }
 
 .special-offer p {
-  margin: 0;
   padding: 0;
-  margin-bottom: 45px;
+  margin: 0 0 45px;
   font-size: 18px;
   line-height: 22px;
 }
@@ -633,8 +623,7 @@ input[type="radio"].visually-hidden {
 }
 
 .products .image {
-  margin: 0;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
 }
 
 .products .hit::before {
@@ -672,9 +661,8 @@ input[type="radio"].visually-hidden {
 }
 
 .features {
-  margin: 0;
   padding: 25px 20px;
-  margin-bottom: 40px;
+  margin: 0 0 40px;
 
   color: #323232;
 
@@ -764,9 +752,7 @@ input[type="radio"].visually-hidden {
 }
 
 .blog-new h3 {
-  margin: 0;
-  margin-top: 7px;
-  margin-right: 230px;
+  margin: 7px 230px 0 0;
 }
 
 .blog-new a {
@@ -806,10 +792,8 @@ input[type="radio"].visually-hidden {
 }
 
 .subscribe .tip {
-  margin: 0;
-  margin-bottom: 35px;
-  padding: 0;
-  padding-top: 10px;
+  margin: 0 0 35px;
+  padding: 10px 0 0;
   color: #5a5a5a;
   font-size: 16px;
   font-weight: 400;
@@ -883,9 +867,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts h3 {
-  margin: 0;
-  margin-right: 90px;
-  margin-bottom: 3px;
+  margin: 0 90px 3px 0;
 
   font-size: 14px;
   font-weight: 400;
@@ -898,9 +880,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts address {
-  margin: 0;
-  margin-bottom: 17px;
-
+  margin: 0 0 17px;
 
   font-size: 18px;
   font-style: normal;
@@ -908,8 +888,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts p {
-  margin: 0;
-  margin-bottom: 22px;
+  margin: 0 0 22px;
 }
 
 .contacts .phone {
@@ -957,9 +936,8 @@ input[type="radio"].visually-hidden {
 .container h1 {
   order: 2;
 
-  margin: 0;
   padding: 0;
-  margin-bottom: 25px;
+  margin: 0 0 25px;
 
   font-size: 35px;
   line-height: 41px;
@@ -970,9 +948,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   justify-content: flex-start;
   width: 880px;
-  margin: 0;
-  margin-top: 15px;
-  margin-bottom: 9px;
+  margin: 15px 0 9px;
   padding: 0;
 
   list-style: none;
@@ -1047,9 +1023,7 @@ input[type="radio"].visually-hidden {
 .filter-price,
 .fat,
 .additive {
-  margin: 0;
-  margin-right: 15px;
-  margin-bottom: 17px;
+  margin: 0 15px 17px 0;
 }
 
 .sort label,
@@ -1084,8 +1058,7 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   color: #ffffff;
 
-  background: url("../img/down-dir-white.svg") no-repeat 92% 50%;
-  background-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2) url("../img/down-dir-white.svg") no-repeat 92% 50%;
   border-radius: 50px;
   border: none;
 
@@ -1099,8 +1072,7 @@ input[type="radio"].visually-hidden {
 .sort select:active {
   outline: none;
 
-  background: url("../img/down-dir-black.svg") no-repeat 93% 58%;
-  background-color: #ffffff;
+  background: #ffffff url("../img/down-dir-black.svg") no-repeat 93% 58%;
 
   color: #323232;
 }
@@ -1625,8 +1597,7 @@ input[type="radio"].visually-hidden {
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
 }
 
 .modal-feedback p {
@@ -1715,8 +1686,7 @@ input[type="radio"].visually-hidden {
 .modal-fullcart td {
   vertical-align: middle;
   margin: 0;
-  padding: 0;
-  padding-bottom: 10px;
+  padding: 0 0 10px;
 }
 
 .modal-fullcart .btn-del {
