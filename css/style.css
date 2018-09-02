@@ -556,6 +556,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+
   margin: 0;
   padding: 0;
   list-style: none;
@@ -613,13 +614,21 @@ input[type="radio"].visually-hidden {
   order: 1;
 
   width: 258px;
+}
 
+.products .link {
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
   text-align: center;
   color: #ffffff;
   text-decoration: underline;
+}
+
+.products .link:hover,
+.products .link:focus,
+.products .link:after {
+  color: #ffbc9e;
 }
 
 .products .image {
