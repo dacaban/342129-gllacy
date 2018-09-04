@@ -332,7 +332,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   left:16px;
-  bottom: 7px;
+  bottom: 6px;
   width: 21px;
   height: 20px;
   background: url("../img/cart.svg") no-repeat 0 0;
