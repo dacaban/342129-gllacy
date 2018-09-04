@@ -92,7 +92,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   width: 382px;
   margin-left: 10px;
-  margin-top: 25px;
+  margin-top: 22px;
   margin-bottom: auto;
 }
 
@@ -224,7 +224,7 @@ input[type="radio"].visually-hidden {
   justify-content: flex-end;
 
   max-width: 280px;
-  margin: 25px 27px auto auto;
+  margin: 24px 27px auto auto;
 }
 
 .search,
@@ -245,10 +245,10 @@ input[type="radio"].visually-hidden {
 
 .search {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 33px;
-  height: 33px;
+  padding-bottom: 3px;
+  padding-left: 7px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -270,7 +270,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 93px;
+  padding: 6px 17px 7px 15px;
 }
 
 .login-link svg {
@@ -308,7 +308,7 @@ input[type="radio"].visually-hidden {
 .cart {
   position: relative;
   box-sizing: border-box;
-  padding: 8px 17px 8px 45px;
+  padding: 6px 17px 7px 44px;
   cursor: default;
 }
 
@@ -316,7 +316,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   left:16px;
-  bottom: 6px;
+  bottom: 7px;
   width: 21px;
   height: 20px;
   background: url("../img/cart.svg") no-repeat 0 0;
@@ -339,18 +339,19 @@ input[type="radio"].visually-hidden {
   background: url("../img/cart-full.svg") no-repeat 0 0;
 }
 
-.maim-navigation .operating-mode {
-  margin: 0;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: right;
-}
 
 .box-info {
   position: absolute;
 
   top: 51px;
   right: 0;
+}
+
+.maim-navigation .operating-mode {
+  margin: 0 0 4px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
 }
 
 .maim-navigation .phone {
@@ -398,7 +399,7 @@ input[type="radio"].visually-hidden {
 .slides {
   position: relative;
 
-  padding-top: 272px;
+  padding-top: 319px;
   margin-bottom: 40px;
 
   text-align: center;
@@ -442,7 +443,7 @@ input[type="radio"].visually-hidden {
 
 .slides .title {
   width: 700px;
-  margin: 0 auto 27px;
+  margin: 0 auto 30px;
 
   font-size: 60px;
   line-height: 60px;
@@ -459,7 +460,7 @@ input[type="radio"].visually-hidden {
 
 .slides .controls {
   position: absolute;
-  bottom: 63px;
+  bottom: 22px;
   left: 27px;
   z-index: 1;
 
@@ -502,7 +503,7 @@ input[type="radio"].visually-hidden {
 
 .special-offer .item {
   flex-basis: 50%;
-  padding: 20px;
+  padding: 16px 20px 24px 19px;
   margin-left: 26px;
 
   border-radius: 15px;
@@ -510,7 +511,7 @@ input[type="radio"].visually-hidden {
 
 .special-offer h3 {
   padding: 0;
-  margin: 0 0 10px;
+  margin: 0 0 15px;
   font-size: 35px;
   line-height: 41px;
 }
@@ -524,6 +525,10 @@ input[type="radio"].visually-hidden {
 
 .btn-box {
   text-align: right;
+}
+
+.special-offer .btn {
+  padding: 9px 23px 11px 22px;
 }
 
 .special-offer .item:first-of-type {
@@ -559,7 +564,7 @@ input[type="radio"].visually-hidden {
   width: 267px;
   min-height: 322px;
   margin-right: 26px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 
   text-align: center;
 
@@ -575,13 +580,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   background-color: transparent;
-}
-
-.products .title {
-  margin: 0;
-  order: 1;
-
-  width: 258px;
 }
 
 .products .products-bg:hover::before {
@@ -631,10 +629,10 @@ input[type="radio"].visually-hidden {
 .products .link {
   font-size: 16px;
   font-weight: 500;
-  line-height: 22px;
+  line-height: 21px;
   text-align: center;
   color: #ffffff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.3);
 }
 
 .products .link:hover,
@@ -642,11 +640,17 @@ input[type="radio"].visually-hidden {
 .products .link:after {
   color: #ffbc9e;
 
-  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+  box-shadow: 0 1px 0 0 rgba(255, 188, 158, 0.3);
 }
 
 .products .image {
-  margin: 0 0 10px;
+  margin: 0 0 7px;
+}
+
+.products .title {
+  margin: 0 0 0 5px;
+
+  width: 258px;
 }
 
 .products .hit::before {
@@ -666,7 +670,7 @@ input[type="radio"].visually-hidden {
 
 .products .price {
   position: absolute;
-  top: 210px;
+  top: 207px;
   margin: 0;
   line-height: 45px;
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
@@ -678,14 +682,18 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
 }
 
+.price .currency {
+  margin-left: 4px;
+}
+
 .price .weight {
   font-size: 30px;
   line-height: 45px;
 }
 
 .features {
-  padding: 25px 20px;
-  margin: 0 0 40px;
+  padding: 25px 27px 23px 20px;
+  margin-bottom: 40px;
 
   color: #323232;
 
@@ -693,11 +701,14 @@ input[type="radio"].visually-hidden {
   border-radius: 15px;
 }
 
-.features .tip {
+.features .description {
   margin: 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
 }
 
 .features .list {
@@ -713,12 +724,17 @@ input[type="radio"].visually-hidden {
 .features .item {
   position: relative;
 
-  padding-top: 25px;
+  padding-top: 21px;
   padding-left: 56px;
+  margin-bottom: 1px;
   width: 476px;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+}
+
+.features .item:nth-child(2n) {
+  padding-left: 59px;
 }
 
 .features .item::before {
@@ -726,7 +742,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   left: 0;
-  top: 12px;
+  top: 8px;
   width: 49px;
   height: 49px;
 
@@ -756,9 +772,9 @@ input[type="radio"].visually-hidden {
 .blog-new {
   flex-basis: 50%;
   box-sizing: border-box;
-  min-height: 180px;
+  min-height: 220px;
   margin-right: 26px;
-  padding: 20px;
+  padding: 23px 20px;
 
   color: #323232;
 
@@ -775,7 +791,7 @@ input[type="radio"].visually-hidden {
 }
 
 .blog-new h3 {
-  margin: 7px 230px 0 0;
+  margin: 4px 230px 0 0;
 }
 
 .blog-new a {
@@ -814,7 +830,7 @@ display: block;
   border-radius: 15px;
 }
 
-.subscribe .tip {
+.subscribe .tooltip {
   margin: 0 0 35px;
   padding: 10px 0 0;
   color: #5a5a5a;
@@ -879,7 +895,7 @@ display: block;
   top: 63px;
   width: 252px;
   height: 255px;
-  padding: 30px 25px 20px;
+  padding: 28px 25px 20px;
 
   color: #323232;
 
@@ -890,7 +906,7 @@ display: block;
 }
 
 .contacts h3 {
-  margin: 0 90px 3px 0;
+  margin: 0 95px 2px 0;
 
   font-size: 14px;
   font-weight: 400;
@@ -899,7 +915,7 @@ display: block;
 
 .contacts h3:last-of-type {
   margin-right: 70px;
-  margin-bottom: 7px;
+  margin-bottom: 6px;
 }
 
 .contacts address {
@@ -926,7 +942,7 @@ display: block;
 }
 
 .contacts .btn {
-  padding: 10px 27px;
+  padding: 9px 26px 11px 28px;
 }
 
 .map img {
@@ -946,9 +962,22 @@ display: block;
   width: 80px;
   height: 140px;
   left: 239px;
-  bottom: 155px;
+  bottom: 158px;
 
   background: url("../img/marker.svg") no-repeat 0 0;
+}
+
+.map::after {
+  content: "";
+
+  position: absolute;
+  width: 182px;
+  height: 110px;
+  left: 279px;
+  bottom: 158px;
+
+
+  background: url("../img/shadow.png") no-repeat 0 0;
 }
 
 .box-title {
@@ -971,7 +1000,7 @@ display: block;
   flex-wrap: wrap;
   justify-content: flex-start;
   width: 880px;
-  margin: 15px 0 9px;
+  margin: 15px 0 4px;
   padding: 0;
 
   list-style: none;
@@ -1028,7 +1057,7 @@ display: block;
 }
 
 .filters {
-  margin-bottom: 40px;
+  margin-bottom: 23px;
 }
 
 .filters-form {
@@ -1050,8 +1079,12 @@ display: block;
   margin: 0 15px 17px 0;
 }
 
+.filter-price>span {
+  display: block;
+}
+
 .sort label,
-.filter-price span,
+.filter-price>span,
 .filters legend {
   font-size: 14px;
   font-weight: 500;
@@ -1113,7 +1146,7 @@ display: block;
 .filter-bg {
   box-sizing: border-box;
   padding: 17px 22px 16px;
-  width: 220px;
+  width: 218px;
 
   text-align: center;
 
@@ -1123,7 +1156,7 @@ display: block;
 
 .filter-price .range {
   position: relative;
-  width: 176px;
+  width: 172px;
   border: 2px solid rgba(255, 255, 255, 0.5)
 }
 
@@ -1143,11 +1176,11 @@ display: block;
 }
 
 .filter-price .min-price {
-  left: 13px;
+  left: 10px;
 }
 
 .filter-price .max-price {
-  right: 45px;
+  right: 44px;
 }
 
 .filter-price .min-price:hover,
@@ -1163,7 +1196,7 @@ display: block;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
-  padding: 10px 17px 9px 14px;
+  padding: 11px 17px 8px 14px;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -1172,14 +1205,22 @@ display: block;
   border-radius: 50px;
 }
 
-.fat label,
+.fat label {
+  position: relative;
+
+  padding-left: 33px;
+  padding-right: 17px;
+
+  cursor: pointer;
+}
+
 .additive label {
   position: relative;
 
-  padding-left: 35px;
-  padding-right: 15px;
+  padding-left: 33px;
+  padding-right: 21px;
 
-  cursor: pointer;
+  cursor: pointer
 }
 
 .fat-item:last-child label,
@@ -1193,8 +1234,8 @@ display: block;
   position: absolute;
   width: 24px;
   height: 24px;
-  left: 0;
-  bottom: -3px;
+  left: -1px;
+  bottom: -1px;
 
   opacity: 0.8;
 }
@@ -1231,7 +1272,7 @@ display: block;
 }
 
 .filters-btn {
-  padding: 8px 28px 7px;
+  padding: 8px 25px 7px 28px;
   margin-top: 4px;
 
   color: #ffffff;
@@ -1263,7 +1304,7 @@ display: block;
   display: flex;
   justify-content: flex-end;
   max-width: 250px;
-  margin: 40px 0 30px;
+  margin: 41px 0 30px;
 
   list-style: none;
 }
@@ -1285,8 +1326,8 @@ display: block;
   content: "";
 
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 9px;
+  height: 9px;
   top: 0;
 
   background-color: transparent;
@@ -1301,7 +1342,7 @@ display: block;
 }
 
 .pagination-next::before{
-  right: 0;
+  right: 3px;
   box-shadow: 1px -1px 0 0 #ffffff;
 }
 
@@ -1311,7 +1352,8 @@ display: block;
 
 .pagination-list a {
   display: block;
-  padding: 6px 10px;
+  padding: 4px 8px;
+  margin-right: 4px;
 
   border-radius: 50%;
 
@@ -1342,6 +1384,7 @@ display: block;
 }
 
 .line {
+  margin: 0 0 18px;
   border: none;
   background-color: #ffffff;
   height: 1px;
@@ -1351,7 +1394,7 @@ display: block;
 .main-footer {
   display: flex;
   justify-content: space-between;
-  padding: 0 27px 35px;
+  padding: 0 27px 35px 27px;
   margin-top: 12px;
 }
 
@@ -1404,7 +1447,8 @@ display: block;
 }
 
 .documents {
-  margin-top: 18px;
+  margin-top: 12px;
+  margin-left: -14px;
   width: 326px;
 }
 
@@ -1460,7 +1504,7 @@ display: block;
 }
 
 .copyright {
-  margin: 0;
+  margin: -2px 0 0;
   padding: 0;
   width: 190px;
   font-size: 12px;
@@ -1468,9 +1512,16 @@ display: block;
   line-height: 18px;
 }
 
+
+
+.copyright .image {
+  margin-left: 2px;
+}
+
 .copyright img {
-  width: 118px;
-  height: 38px;
+  width: 108px;
+  height: 39px;
+  object-fit: scale-down;
 }
 
 .copyright .link {
