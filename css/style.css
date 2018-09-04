@@ -1388,10 +1388,13 @@ input[type="radio"].visually-hidden {
   opacity: 0.2;
 }
 
+.pagination-item {
+  margin-right: 4px;
+}
+
 .pagination-list a {
   display: block;
   padding: 4px 8px;
-  margin-right: 4px;
   border-radius: 50%;
   color: #ffffff;
   font-size: 16px;
@@ -1405,7 +1408,7 @@ input[type="radio"].visually-hidden {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.pagination-list a:active {
+.pagination-item a:active {
   color: #323232;
   background-color: #ffffff;
 }
