@@ -93,7 +93,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   width: 382px;
   margin-left: 10px;
-  margin-top: 22px;
+  margin-top: 24px;
   margin-bottom: auto;
 }
 
@@ -124,6 +124,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-menu-item > a {
+  display: block;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -324,7 +325,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 6px 17px 7px 44px;
+  padding: 8px 17px 8px 44px;
   cursor: default;
 }
 
