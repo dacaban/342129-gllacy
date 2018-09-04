@@ -1515,13 +1515,12 @@ display: block;
 
 
 .copyright .image {
-  margin-left: 2px;
+  margin-left: 4px;
 }
 
 .copyright img {
   width: 108px;
-  height: 39px;
-  object-fit: scale-down;
+  height: 38px;
 }
 
 .copyright .link {
