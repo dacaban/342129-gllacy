@@ -1214,6 +1214,10 @@ input[type="radio"].visually-hidden {
   appearance: none;
 }
 
+.sort select::-ms-expand {
+  display: none;
+}
+
 .sort select:hover,
 .sort select:focus,
 .sort select:active {
