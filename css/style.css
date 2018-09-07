@@ -1916,8 +1916,8 @@ input[type="radio"].visually-hidden {
 
 .modal-fullcart .btn-del {
   position: relative;
-  width: 11px;
-  height: 11px;
+  width: 15px;
+  height: 15px;
   padding: 0;
   font-size: 0;
   background-color: transparent;
@@ -1930,7 +1930,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   left: 0;
-  top: 0;
+  top: 7px;
   width: 14px;
   height: 1px;
   background-color: #231F20;
@@ -1949,7 +1949,8 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-fullcart .delete {
-  padding-right: 13px;
+  padding-right: 9px;
+  padding-bottom: 18px;
   width: 11px;
 }
 
