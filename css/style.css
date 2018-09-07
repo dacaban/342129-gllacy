@@ -8,7 +8,6 @@ body {
   font-weight: 700;
   color: #ffffff;
   background-color: #849d8f;
-
 }
 
 .site-wrapper {
@@ -21,7 +20,6 @@ body {
 .site-wrapper::before,
 .site-wrapper::after {
   content: "";
-
   visibility: hidden;
 }
 
@@ -94,9 +92,9 @@ input[type="radio"].visually-hidden {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   width: 382px;
   margin-left: 10px;
   margin-top: 24px;
@@ -104,7 +102,6 @@ input[type="radio"].visually-hidden {
 }
 
 .main-menu-item {
-  padding: 7px 14px;
   position: relative;
 }
 
@@ -129,11 +126,18 @@ input[type="radio"].visually-hidden {
   border-radius: 5px;
 }
 
-.main-menu-item > a {
+.main-menu-item>a {
   display: block;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  padding: 7px 14px;
 }
 
+.main-menu-item>a:not(.active-link)::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
 
 .main-menu a {
   color: #ffffff;
@@ -141,28 +145,26 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
 }
 
-.main-menu-item:hover:not(.active) {
+.main-menu-item>a:hover:not(.active-link) {
   background-color: #f7f6f3;
   border-radius: 50px;
-  border: none;
-}
-
-.main-menu-item:hover:not(.active)>a {
   color: #333333;
 }
 
-.main-menu .active {
-  background-color: #d07058;
-  border-radius: 50px;
-  cursor: pointer;
+.main-menu-item>a::after:hover,
+.main-menu-item>a::after:focus {
+  display: none;
 }
 
 .main-menu .active-link {
+  background-color: #d07058;
+  border-radius: 50px;
+  cursor: pointer;
   color: #ffffff;
-  border: none;
 }
 
-.main-menu-item:active:not(.active) {
+
+.main-menu-item a:active:not(.active-link) {
   color: #333333;
   background-color: #ededed;
   -webkit-box-shadow: inset 0 2px 1px 0 #696969;
@@ -235,9 +237,9 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   max-width: 280px;
   margin: 24px 27px auto auto;
 }
@@ -689,16 +691,14 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   text-align: center;
   color: #ffffff;
-  -webkit-box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.3);
-  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .products .link:hover,
 .products .link:focus,
 .products .link:after {
   color: #ffbc9e;
-  -webkit-box-shadow: 0 1px 0 0 rgba(255, 188, 158, 0.3);
-  box-shadow: 0 1px 0 0 rgba(255, 188, 158, 0.3);
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
 
 .products .image {
@@ -939,8 +939,8 @@ input[type="radio"].visually-hidden {
 .subscribe input:-ms-input-placeholder {
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
   color: #999999;
+  line-height:normal;
 }
 
 .subscribe input:placeholder-shown {
@@ -1687,14 +1687,14 @@ input[type="radio"].visually-hidden {
 .modal input:-ms-input-placeholder {
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height:normal;
   color: #999999;
 }
 
 .modal-feedback textarea:-ms-input-placeholder {
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height:normal;
   color: #999999;
 }
 
