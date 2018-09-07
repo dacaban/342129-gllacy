@@ -93,6 +93,10 @@ input[type="radio"].visually-hidden {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 382px;
   margin-left: 10px;
   margin-top: 24px;
@@ -231,6 +235,10 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   max-width: 280px;
   margin: 24px 27px auto auto;
 }
@@ -274,13 +282,19 @@ input[type="radio"].visually-hidden {
   fill: #000000;
 }
 
+.search-container {   /*--------*/
+  position: relative;
+}
+
 .login-container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .cart-container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1708,14 +1722,14 @@ input[type="radio"].visually-hidden {
 .search-box {
   display: none;
   position: absolute;
-  left: -295px;
+  right: 0;
   top: 28px;
   z-index: 1;
+  /*box-shadow: 0 0 0 1px red;*/
 }
 
 .modal-search {
   margin-top: 10px;
-  margin-right: 5px;
   padding: 20px 15px;
   border-radius: 5px;
 }
@@ -1729,7 +1743,7 @@ input[type="radio"].visually-hidden {
   display: none;
   position: absolute;
   top: 28px;
-  left: -130px;
+  right: 0;
   z-index: 1;
 }
 
@@ -1874,7 +1888,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   z-index: 1;
   top: 28px;
-  left: -265px;
+  right: 0;
 }
 
 .modal-fullcart {
