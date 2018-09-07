@@ -48,6 +48,7 @@ img {
 }
 
 .visually-hidden:not(:focus):not(:active),
+label.visually-hidden:active,
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
@@ -950,13 +951,15 @@ input[type="radio"].visually-hidden {
 }
 
 .subscribe input:hover {
-  border: solid 2px rgba(154, 154, 154, 0.52);
+  -webkit-box-shadow: 0 0 0 1px rgba(154, 154, 154, 0.52);
+  box-shadow: 0 0 0 1px rgba(154, 154, 154, 0.52);
   border-radius: 5px;
 }
 
 .subscribe input:focus {
   outline: none;
-  border: solid 2px rgba(46, 136, 228, 0.52);
+  -webkit-box-shadow: 0 0 0 1px rgba(46, 136, 228, 0.52);
+  box-shadow: 0 0 0 1px rgba(46, 136, 228, 0.52);
   border-radius: 5px;
 }
 
@@ -1712,12 +1715,14 @@ input[type="radio"].visually-hidden {
 
 .modal input:hover,
 .modal-feedback textarea:hover {
-  border: 2px solid rgba(154, 154, 154, 0.52);
+  -webkit-box-shadow: 0 0 0 1px rgba(154, 154, 154, 0.52);
+  box-shadow: 0 0 0 1px rgba(154, 154, 154, 0.52);
 }
 
 .modal input:focus,
 .modal-feedback textarea:focus {
-  border: 2px solid rgba(46, 136, 228, 0.52);
+  -webkit-box-shadow: 0 0 0 1px rgba(154, 154, 154, 0.52);
+  box-shadow: 0 0 0 1px rgba(46, 136, 228, 0.52);
 }
 
 .search-box {
