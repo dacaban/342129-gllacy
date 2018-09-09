@@ -1578,6 +1578,7 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
 }
 .copyright .image {
+  display: block;
   margin-left: 4px;
 }
 .copyright img {
