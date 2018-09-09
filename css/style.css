@@ -1381,25 +1381,30 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   max-width: 250px;
+  padding: 0;
   margin: 41px 0 30px;
   list-style: none;
 }
 .pagination-btn {
+  display: block;
   position: relative;
-  width: 20px;
-  height: 12px;
+  width: 16px;
+  height: 13px;
   font-size: 0;
   background-color: transparent;
-  border: 0;
   cursor: pointer;
+  color: red;
 }
 .pagination-btn::before {
   content: "";
   position: absolute;
   width: 9px;
   height: 9px;
-  top: 0;
+  top: 2px;
   background-color: transparent;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -1415,13 +1420,19 @@ input[type="radio"].visually-hidden {
   -webkit-box-shadow: 1px -1px 0 0 #ffffff;
   box-shadow: 1px -1px 0 0 #ffffff;
 }
-.pagination-btn:disabled::before {
+.pagination-disabled::before {
   opacity: 0.2;
+}
+.pagination-back {
+  margin-right: 4px;
+}
+.pagination-next {
+  margin-left: 4px;
 }
 .pagination-item {
   margin-right: 4px;
 }
-.pagination-list a {
+.pagination-item a {
   display: block;
   padding: 4px 8px;
   border-radius: 50%;
