@@ -63,7 +63,6 @@ input[type="radio"].visually-hidden {
   height: 64px;
   margin-left: 27px;
   margin-top: 10px;
-  margin-bottom: auto;
 }
 .main-menu,
 .submenu {
@@ -373,6 +372,8 @@ input[type="radio"].visually-hidden {
   padding: 8px 17px 8px 44px;
   cursor: default;
 }
+/*Обновите Ваш макет. Пустая и наполненная кнопки корзины отличаются по
+ширине, т.к. их ширина зависит от содержимого*/
 .cart-empty::before {
   content: "";
   position: absolute;
@@ -1113,7 +1114,7 @@ input[type="radio"].visually-hidden {
   -ms-flex-pack: start;
   justify-content: flex-start;
   width: 880px;
-  margin: 15px 0 4px;
+  margin: 21px 0 4px;
   padding: 0;
   list-style: none;
 }
