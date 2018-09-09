@@ -1405,7 +1405,6 @@ input[type="radio"].visually-hidden {
   font-size: 0;
   background-color: transparent;
   cursor: pointer;
-  color: red;
 }
 .pagination-btn::before {
   content: "";
@@ -1499,29 +1498,36 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 .social-btn {
+  display: block;
+  content: "";
+  font-size: 0;
   color: #ffffff;
-}
-.social-btn svg {
   width: 32px;
   height: 32px;
   border: 3px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
-}
-.social-btn path {
   opacity: 0.8;
 }
-.social-btn:hover svg,
-.social-btn:focus svg {
-  border: 3px solid rgba(255, 255, 255, 0.7);
+.social-btn-tw {
+  background: url("../img/twitter.svg") no-repeat 50%;
 }
-.social-btn:hover path,
-.social-btn:focus path {
+.social-btn-ig {
+  background: url("../img/instagram.svg") no-repeat 50%;
+}
+.social-btn-fb {
+  background: url("../img/fb.svg") no-repeat 50%;
+}
+.social-btn-vk {
+  background: url("../img/vk.svg") no-repeat 50%;
+}
+.social-btn:hover,
+.social-btn:focus {
+  border: 3px solid rgba(255, 255, 255, 0.7);
   opacity: 1;
 }
-.social-btn:active svg {
-  border: 3px solid rgba(255, 255, 255, 0.7);
-}
-.social-btn:active path {
+
+.social-btn:active {
+  border: 3px solid rgba(255, 255, 255, 0.9);
   opacity: 0.7;
 }
 .documents {
