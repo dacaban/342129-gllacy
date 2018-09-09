@@ -424,13 +424,13 @@ input[type="radio"].visually-hidden {
   padding: 0 0 10px;
 }
 .modal-fullcart .btn-del {
+  display: block;
   position: relative;
   width: 15px;
   height: 15px;
   padding: 0;
   font-size: 0;
   background-color: transparent;
-  border: 0;
   cursor: pointer;
 }
 .modal-fullcart .btn-del::before,
