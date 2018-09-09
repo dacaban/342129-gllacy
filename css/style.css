@@ -1028,16 +1028,17 @@ input[type="radio"].visually-hidden {
   margin-right: 70px;
   margin-bottom: 6px;
 }
-.contacts address {
+.contacts p {
+  margin: 0 0 22px;
+}
+.contacts .address {
   margin: 0 0 17px;
   font-size: 18px;
   font-style: normal;
   line-height: 24px;
 }
-.contacts p {
-  margin: 0 0 22px;
-}
 .contacts .phone {
+  margin-right: 100px;
   font-size: 18px;
   line-height: 22px;
 }
