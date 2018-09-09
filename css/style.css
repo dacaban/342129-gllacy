@@ -106,6 +106,9 @@ input[type="radio"].visually-hidden {
   border-radius: 50px;
   color: #333333;
 }
+/*Элементы в меню слипаются, потому что расстояние между
+ними 28px, а паддинг при наведении 14px, по макету для
+промежутка между ними при наведении места не предусмотрено*/
 .main-menu-item>a:not(.active-link)::after {
   content: "";
   display: block;
