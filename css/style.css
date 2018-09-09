@@ -1305,10 +1305,14 @@ input[type="radio"].visually-hidden {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
 }
-.filters label {
+.fat-item label,
+.additive-item label {
   position: relative;
-  padding-left: 35px;
+  padding-left: 34px;
   padding-right: 15px;
+}
+.additive-item label {
+  padding-right: 19px;
 }
 .fat-item:last-child label,
 .additive-item:last-child label {
@@ -1319,7 +1323,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 24px;
   height: 24px;
-  left: 0;
+  left: 2px;
   bottom: -3px;
   opacity: 0.8;
 }
@@ -1489,7 +1493,6 @@ input[type="radio"].visually-hidden {
 }
 .social-btn {
   display: block;
-  content: "";
   font-size: 0;
   color: #ffffff;
   width: 32px;
@@ -1500,24 +1503,26 @@ input[type="radio"].visually-hidden {
 }
 .social-btn-tw {
   background: url("../img/twitter.svg") no-repeat 50%;
+  background-clip: content-box;
 }
 .social-btn-ig {
   background: url("../img/instagram.svg") no-repeat 50%;
+  background-clip: content-box;
 }
 .social-btn-fb {
   background: url("../img/fb.svg") no-repeat 50%;
+  background-clip: content-box;
 }
 .social-btn-vk {
   background: url("../img/vk.svg") no-repeat 50%;
+  background-clip: content-box;
 }
-.social-btn:hover,
-.social-btn:focus {
+.social-btn:hover {
   border: 3px solid rgba(255, 255, 255, 0.7);
   opacity: 1;
 }
-
 .social-btn:active {
-  border: 3px solid rgba(255, 255, 255, 0.9);
+  border: 3px solid rgba(255, 255, 255, 0.7);
   opacity: 0.7;
 }
 .documents {
