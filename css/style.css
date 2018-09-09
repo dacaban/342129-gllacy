@@ -749,7 +749,7 @@ input[type="radio"].visually-hidden {
 }
 .products-bg:hover .btn {
   position: absolute;
-  display: inline-block;
+  display: block;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
