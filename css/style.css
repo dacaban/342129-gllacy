@@ -1400,6 +1400,9 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
   cursor: pointer;
 }
+.pagination-disabled {
+  cursor: default;
+}
 .pagination-btn::before {
   content: "";
   position: absolute;
